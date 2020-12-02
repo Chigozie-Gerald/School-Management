@@ -1,0 +1,28 @@
+.paymentHistory_wrapper {
+  width: 100%;
+  min-height: calc(var(--vvh, 1vh) * 100 - 9.5rem);
+  background-color: #fff;
+}
+.paymentHistory_header {
+  min-height: 2rem;
+  width: 100%;
+  padding-left: 1rem;
+  color: #777;
+  font-size: 0.85rem;
+  border-bottom: 1px solid #ddd;
+}
+.paymentHistory_header i {
+  font-size: 1.25rem !important;
+  vertical-align: top;
+}
+.paymentHistory_header b {
+  font-weight: 550;
+  vertical-align: top;
+}
+.paymentHistory_body {
+  flex: 1;
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem 0;
+}

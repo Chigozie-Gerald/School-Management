@@ -1,0 +1,30 @@
+.compulsoryFee_wrapper {
+  width: 100%;
+  min-height: 10rem;
+  background-color: #fff;
+}
+.compulsoryFee_wrapper_top {
+  min-height: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.compulsoryFee_wrapper_top_img_div {
+  min-height: 12rem;
+  width: 100%;
+  background-color: #eee;
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 350;
+  padding: 0 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.compulsoryFee_wrapper_bottom {
+  padding-top: 1rem;
+  min-height: 10rem;
+  flex: 1;
+}

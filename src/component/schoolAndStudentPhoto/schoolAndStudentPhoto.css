@@ -1,0 +1,5 @@
+.school_student_photo_wrapper {
+  min-height: calc(var(--vvh, 1vh) * 100);
+  min-height: inherit;
+  background-color: #fff;
+}

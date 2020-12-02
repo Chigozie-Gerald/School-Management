@@ -1,0 +1,22 @@
+.homeSlider_wrapper {
+  width: 100%;
+  height: 20rem;
+  background-color: #fff;
+  padding: 0.5rem 0;
+}
+.homeSlider_box {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.homeSlider_div {
+  height: 100%;
+  position: relative;
+}
+.homeSlider_inner {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}

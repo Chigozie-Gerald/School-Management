@@ -1,0 +1,118 @@
+.homeNews_wrapper {
+  width: 100%;
+  min-height: 20rem;
+  height: auto;
+  background-color: #fff;
+}
+.homeNews_header {
+  height: 3rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+.homeNews_header_inner {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.homeNews_header_inner.div1 {
+  justify-content: flex-start;
+}
+.homeNews_header_inner.div2 {
+  justify-content: flex-end;
+  color: var(--pantone);
+}
+.homeNews_header_inner_link {
+  width: auto;
+  height: 100%;
+  padding: 0 0.5rem;
+  transition: all 200ms ease;
+}
+.homeNews_header_inner_link:hover {
+  width: auto;
+  height: 100%;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 123, 255, 0.15);
+}
+.homeNews_body {
+  min-height: 6rem;
+  height: auto;
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  padding-right: 0.75rem;
+}
+.homeNews_body_wrapper {
+  width: 100%;
+  min-height: 6rem;
+  height: auto;
+  display: flex;
+  padding: 0.5rem 0;
+  align-items: center;
+}
+.homeNews_body_inner {
+  display: flex;
+  vertical-align: top;
+  align-items: center;
+  height: auto;
+}
+.homeNews_body_inner.div1 {
+  width: 3.5rem;
+  align-self: flex-start;
+  padding-top: 1rem;
+  height: 5rem;
+  align-items: flex-start;
+  margin-right: 1.5rem;
+}
+.homeNews_body_inner_img {
+  height: 3.5rem;
+  width: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background-color: #ddd;
+}
+.homeNews_body_inner.div2 {
+  text-align: left;
+  justify-content: flex-start;
+  /* padding-left: 1.5rem; */
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+  width: calc(100% - 8.5rem);
+  border-bottom: 1px solid #ddd;
+  min-height: 6rem;
+  flex-direction: column;
+}
+.homeNews_body_inner_div2_header {
+  min-height: 2rem;
+  width: 100%;
+  font-weight: 500;
+}
+.homeNews_body_inner_div2_body {
+  flex: 1;
+  padding-top: 0.5rem;
+  width: 100%;
+  color: #888;
+  font-size: 0.9rem;
+  /* background-color: #eee; */
+}
+.homeNews_body_inner.div3 {
+  width: 3.5rem;
+  height: 5rem;
+  justify-content: center;
+  align-self: flex-start;
+}
+.homeNews_body_wrapper:last-child .homeNews_body_inner.div2 {
+  border-bottom: none;
+}
+.home_news_body_icon {
+  font-size: 2.5rem !important;
+  color: var(--pantone);
+  -webkit-text-stroke: 0.1rem #fff;
+}

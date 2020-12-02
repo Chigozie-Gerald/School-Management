@@ -1,0 +1,137 @@
+.location_wrapper {
+  min-height: calc(var(--vvh, 1vh) * 100);
+  background-color: #fff;
+}
+.location_title_btn_circle,
+.location_map_header_inner.div2,
+.location_header_inner.div1 {
+  width: 2.5rem;
+}
+.location_header {
+  height: 3.5rem;
+  z-index: 999;
+  padding: 0.5rem;
+  top: 0;
+  background-color: #28372d;
+}
+.location_header_inner {
+  height: 100%;
+  color: #fff;
+}
+.location_header_icon {
+  -webkit-text-stroke: 0.02rem #28372d;
+}
+.location_header_inner.div2 {
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+.location_body {
+  min-height: calc(var(--vvh, 1vh) * 100 - 3.5rem);
+  background-color: #fff;
+}
+.location_map {
+  height: 15rem;
+  background-color: #fff7b0;
+  border-bottom: 1px solid #ddd;
+}
+.location_map_header {
+  position: absolute;
+  top: 0.5rem;
+  top: 0;
+  height: 2.5rem;
+  background-color: rgb(202, 227, 255);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.location_map_header_inner {
+  height: 100%;
+}
+.location_map_header_inner.div1 {
+  padding: 0.25rem 0.5rem;
+  color: #005ec2;
+  color: var(--pantone);
+}
+.location_map_header_icon {
+  color: #666;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+.location_title_wraper {
+  padding: 1rem;
+  padding-top: 2rem;
+  min-height: calc(var(--vvh, 1vh) * 100 - 6.5rem - 15rem);
+}
+.location_title_address,
+.location_title_address_header,
+.location_title_address_body,
+.location_title_btn_div,
+.location_title_btn,
+.location_title_btn_inner,
+.location_title_btn_circle,
+.location_title_contact_us {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.location_title_address {
+  font-size: 0.85rem;
+  min-height: 7.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+  padding: 0.5rem;
+}
+.location_title_address_header {
+  white-space: nowrap;
+  height: 2rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--pantone);
+  border-bottom: 1px solid #ddd;
+}
+.location_title_address_body {
+  padding: 1rem 0;
+}
+.location_title_btn_div {
+  height: 3.5rem;
+  padding: 0.5rem 2rem;
+}
+.location_title_btn {
+  overflow: visible;
+  white-space: nowrap;
+  height: 100%;
+  padding-right: 0.5rem;
+}
+.location_title_btn_inner {
+  border-radius: 2.5rem;
+  height: 100%;
+  background-color: var(--pantone);
+  color: #fff;
+}
+.location_title_btn_circle {
+  height: 2.5rem;
+  border: 1px solid #eee;
+  box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+.location_title_btn_circle i {
+  font-size: 2rem !important;
+  color: var(--pantone);
+  -webkit-text-stroke: 0.06rem #fff;
+}
+.location_title_contact_us {
+  white-space: nowrap;
+  color: var(--pantone);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.85rem;
+  height: 3rem;
+  margin-top: 1rem;
+}
+.location_map_expand_icon_div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.location_map_expand_icon_link {
+  padding: 0.5rem;
+}

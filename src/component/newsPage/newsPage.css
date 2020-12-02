@@ -1,0 +1,133 @@
+.newsPage_head_icon_div {
+  padding: 0.5rem;
+  background-color: #eee;
+  max-width: 2.25rem;
+  height: 2.25rem;
+  margin: 0 1rem;
+}
+
+.newsPage_head {
+  font-size: 0.85rem;
+}
+.newsPage_title_img {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 0.45rem;
+  background-color: #eee;
+}
+.newsPage_head_title {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--pantone);
+}
+.newsPage_head_txt {
+  min-height: 7rem;
+}
+.newsPage_head_cal {
+  padding: 0.5rem 0;
+}
+.newsPage_head_cal i {
+  padding-right: 0.5rem;
+  font-size: 1.75rem !important;
+  color: var(--pantone);
+}
+.newsPage_head_quote {
+  margin: 1rem 0;
+}
+.newsPage_head_quote b {
+  color: var(--pantone);
+  color: teal;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.newsPage_body {
+  border-top: 1px solid #ddd;
+  padding-bottom: 2rem;
+}
+.newsPage_footer {
+  min-height: 3rem;
+}
+.newsPage_footer_div {
+  background-color: var(--lteBacColor);
+}
+
+/* Service Ad */
+.serviceAd {
+  background-color: var(--lteBacColor);
+  border-top: 1px solid #ddd;
+}
+.serviceAd_head {
+  text-align: center;
+  padding: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+/*
+helooooooooooooo
+*/
+.serviceAd_head_inline {
+  /* border: 1px solid #000; */
+  border-radius: 50%;
+  padding: 1rem;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.15);
+}
+.serviceAd_head_inline i {
+  position: relative;
+  overflow: hidden;
+  font-size: 3rem !important;
+  display: inline-flex !important;
+  color: var(--info);
+}
+.serviceAd_head_inline i:nth-child(n + 2) {
+  width: 1.5rem;
+}
+.serviceAd_head_inline i:nth-child(n + 3) {
+  width: 1.5rem;
+  height: 1.4rem;
+  top: 0.8rem;
+  align-items: flex-end;
+}
+.serviceAd_head_inline i:nth-child(even) {
+  justify-content: flex-end;
+}
+.serviceAd_head_inline i:nth-child(odd) {
+  justify-content: flex-start;
+}
+.serviceAd_head_inline i:nth-child(2) {
+  color: #927a0c;
+  margin-left: -1.5rem;
+  z-index: 2;
+  position: relative;
+}
+.serviceAd_head_inline i:nth-child(3) {
+  color: var(--yellow);
+  z-index: 3;
+  margin-left: -3rem;
+  position: relative;
+}
+.serviceAd_head_inline i:nth-child(4) {
+  color: var(--green);
+  z-index: 4;
+  position: relative;
+}
+/*    
+
+*/
+.serviceAd_wrapper {
+  background-color: #fff;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+}
+.serviceAd_wrapper b {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--pantone);
+}
+.serviceAd_body {
+  padding-bottom: 1rem;
+}
+.serviceAd_btn {
+  padding: 0.35rem 1.5rem;
+  color: #fff;
+  background-color: var(--pantone);
+  border-radius: 0.25rem;
+}

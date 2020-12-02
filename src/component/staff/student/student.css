@@ -1,0 +1,80 @@
+.staff_student_wrapper {
+  background-color: rgba(225, 229, 236, 0.671);
+  background-color: rgba(225, 229, 236, 0.6);
+  background-color: var(--lteBacColor);
+}
+.staff_student_big_btn {
+  padding: 1.5rem;
+  gap: 1.5rem;
+  grid-auto-rows: minmax(auto, auto);
+  background-color: #fff;
+  position: relative;
+}
+.staff_student_big_box {
+  background-color: var(--pantone);
+  min-height: 3.5rem;
+  color: #fff;
+  padding: 0.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 0.35rem;
+}
+.staff_student_big_txt {
+  color: var(--pantone);
+  font-weight: 550;
+}
+.stnTypePane_wrap {
+  padding: 0 1rem;
+  padding-bottom: 1rem;
+}
+.stnTypePane_header {
+  padding: 0.5rem 0;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.stnTypePane_body {
+  padding: 1rem;
+  padding-top: 0.5rem;
+  background-color: #fff;
+  border-color: transparent !important;
+}
+.stnTypePane_inner_top {
+  padding: 0.5rem 0;
+  padding-top: 0;
+  font-size: 0.85rem;
+  color: var(--pantone);
+}
+.stnTypePane_img {
+  background-color: #aaa;
+  height: 3rem;
+  width: 3rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.stnTypePane_right_name {
+  font-size: 1rem;
+}
+.stnTypePane_right {
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+.stnTypePane_right_numb,
+.stnTypePane_right_info {
+  font-size: 0.85rem;
+}
+.stnTypePane_right_numb {
+  color: var(--lteColor);
+}
+.stnTypePane_right_info {
+  /* color: var(--blue); */
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.15rem;
+  background-color: rgba(255, 176, 7, 0.35);
+}
+.stnTypePane_wrap .Link {
+  margin-bottom: 1rem;
+}

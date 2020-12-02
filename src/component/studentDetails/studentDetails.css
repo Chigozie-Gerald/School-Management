@@ -1,0 +1,88 @@
+.studentDetails_wrapper {
+  min-height: calc(var(--vvh, 1vh) * 100 - 9.5rem);
+  background-color: #fff;
+  padding: 1rem;
+}
+.studentDetails_header {
+  padding-bottom: 1rem;
+}
+.studentDetails_header_btn {
+  padding: 0 1rem;
+  min-height: 2rem;
+  border-radius: 0.35rem;
+  color: #fff;
+  background-color: var(--secondary);
+  transition: all 200ms ease;
+}
+.studentDetails_header_btn:hover {
+  opacity: 0.75;
+}
+.studentDetails_title {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+/* .studentDetails_title_inner {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+  height: auto;
+} */
+
+.studentDetails_title_name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--pantone);
+}
+.studentDetails_title_class {
+  font-size: 0.85rem;
+}
+.studentDetails_title_position {
+  font-size: 0.85rem;
+  color: #777;
+}
+.studentDetails_title_img_div {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #eee;
+}
+
+.studentDetails_body {
+  margin-top: 1.5rem;
+  border-top: 1px solid #ddd;
+  flex: 1;
+  padding-bottom: 1rem;
+}
+.studentDetails_info {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 0.75px solid #ddd;
+}
+.studentDetails_info:last-child {
+  border-bottom: none;
+}
+.studentDetails_info_header {
+  padding: 0.5rem;
+  color: var(--pantone);
+  font-size: 0.85rem;
+}
+.studentDetails_info_body {
+  padding-left: 0.5rem;
+}
+.studentDetails_info_body > p {
+  margin-bottom: 0.75rem;
+  padding-left: 0.5rem;
+}
+.studentDetails_info_body > p > b {
+  display: inline-flex;
+  font-size: 0.8rem;
+  padding: 0 0.35rem;
+  color: var(--lteColor);
+  color: #555;
+  background-color: rgba(221, 221, 221, 0.35);
+  font-weight: 400;
+  border-radius: 0.15rem;
+}
+.studentDetails_info_body > p > span {
+  display: inline-flex;
+  width: 100%;
+}

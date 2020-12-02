@@ -1,0 +1,20 @@
+.select_wrapper {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+}
+.select_wrapper:nth-child(1) {
+  margin-top: 0;
+}
+.select_body {
+  padding: 0 0.5rem;
+  background-color: #fff;
+  border-radius: 0.35rem;
+  border: 1px solid #ddd;
+}
+.select_body_inner {
+  min-height: 2.35rem;
+}
+.select_body_inner_btn {
+  width: 3rem;
+  min-height: 2.35rem;
+}

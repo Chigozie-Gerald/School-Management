@@ -1,0 +1,93 @@
+.staff_assignment_wrapper {
+  background-color: #fff;
+  background-color: rgb(245, 245, 245);
+  padding: 1rem;
+  padding-top: 1.5rem;
+}
+.staff_assignment_wrapper .Link {
+  margin-bottom: 1.5rem;
+}
+.staff_assignment_btn {
+  cursor: pointer;
+  min-height: 4rem;
+  background-color: var(--pantone);
+  color: #fff;
+  border-radius: 0.35rem;
+  font-size: 1.1rem;
+  transition: all 200ms ease;
+}
+.staff_assignment_btn:hover {
+  background-color: var(--pantoneLte);
+}
+.staff_assignment_body {
+  border-top: 1px solid #ddd;
+}
+.assList_wrapper {
+  border-top: 1px solid #ddd;
+}
+.assList_wrapper:first-child {
+  border-top: none;
+}
+.assList_header {
+  padding: 0.75rem 0;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.assList_body_pane {
+  background-color: #fff;
+  padding: 1rem;
+  padding-top: 0;
+  border-color: transparent !important;
+}
+.assList_poster,
+.assList_time,
+.assList_due {
+  color: var(--lteColor);
+  font-size: 0.85rem;
+}
+.assList_poster {
+  color: var(--pantone);
+  font-weight: 500;
+  padding: 0.5rem 0;
+  padding-top: 0.5rem;
+}
+.assList_title {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.assList_time {
+  padding-top: 0.5rem;
+}
+.assList_due {
+  padding-bottom: 0.75rem;
+}
+.assList_due b {
+  font-weight: 600;
+  color: #494949;
+  color: var(--pantone);
+}
+.assList_quest {
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+.assList_quest_header {
+  display: inline;
+  padding: 0.25rem 0.75rem;
+  background-color: #ddd;
+  font-weight: 500;
+}
+.assList_quest_body {
+  min-height: 5rem;
+  padding-top: 0.75rem;
+}
+.dAssList_wrap {
+  color: #777;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 1rem;
+}
+.assList_p {
+  color: #444;
+  font-weight: 500;
+  font-size: 1.25rem;
+}

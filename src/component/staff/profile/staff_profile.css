@@ -1,0 +1,6 @@
+.profile_min_height {
+  min-height: calc(var(--vvh, 1vh) * 100 - 9.5rem);
+}
+.profileTable_wrapper {
+  background-color: #234;
+}

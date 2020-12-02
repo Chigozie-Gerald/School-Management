@@ -1,0 +1,24 @@
+.little_footer_wrapper {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #888;
+  font-size: 0.85rem;
+}
+.little_footer_span1,
+.little_footer_span2,
+.little_footer_span3 {
+  display: inline-flex;
+  width: auto;
+}
+.little_footer_span2 {
+  width: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.little_footer_span2 div {
+  border: 2px solid #888;
+  border-radius: 50%;
+}

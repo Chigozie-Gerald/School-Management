@@ -1,0 +1,79 @@
+.assCreate {
+  background-color: #fff;
+}
+.assCreatePane.div1 {
+  padding: 2.5rem 1rem;
+  padding-bottom: 1rem;
+}
+.assCreatePane.div2 {
+  padding: 1rem;
+}
+
+.assCreate_btn_wrapper {
+  align-items: flex-end;
+}
+.assCreate_btn {
+  background-color: var(--pantone);
+  color: #fff;
+  border-radius: 0.15rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  transition: all 350ms ease;
+}
+.assCreate_btn[focus] {
+  opacity: 0.75 !important;
+}
+.assCreate_btn[disabled] {
+  opacity: 0.5;
+}
+.assCreate_tarea_wrapper {
+  margin-top: 1.25rem;
+}
+.assCreate_tarea_wrapper:nth-child(1) {
+  margin-top: 0;
+}
+.assCreate_tarea_header {
+  font-size: 0.85rem;
+  color: var(--lteColor);
+  padding: 0.25rem 1rem;
+  padding-bottom: 0.3rem;
+}
+.assCreate_tarea_header span:nth-child(2) {
+  color: var(--red);
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.assCreate_tarea {
+  padding: 1rem 0.5rem;
+  resize: none;
+  min-height: calc(3.375rem + 5px);
+  transition: border 100ms ease;
+  caret-color: var(--pantone);
+}
+.assCreate_tarea:focus {
+  border-color: var(--pantone);
+}
+.assCreate_tarea::placeholder {
+  color: var(--lteColor);
+}
+.assCreate_opt {
+  color: var(--pantone);
+  padding: 1rem 0;
+  background-color: #fff;
+  transition: all 350ms ease;
+}
+.assCreate_opt span {
+  cursor: pointer;
+}
+.assCreate_opt i {
+  color: var(--pantone);
+  padding: 0 0.5rem;
+  font-size: 1.9rem !important;
+  -webkit-text-stroke: 0.05rem #fff;
+  transition: all 350ms ease;
+}
+.assCreate_opt span[disabled],
+.assCreate_opt i[disabled] {
+  color: #bbb;
+}

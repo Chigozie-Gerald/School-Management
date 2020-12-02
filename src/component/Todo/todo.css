@@ -1,0 +1,163 @@
+.todo_pane {
+  padding: 1rem 0.5rem;
+}
+.todo_add {
+  margin-top: 1rem;
+  display: flex;
+}
+.todo_add form {
+  width: calc(100%);
+  display: flex;
+}
+
+.todo_add form input {
+  width: calc(100% - 5rem);
+  height: 2.75rem;
+  padding-left: 0.5rem;
+  border-radius: 0.35rem;
+  border: 1px solid #ddd;
+}
+
+.todo_wrapper {
+  border-radius: 0.35rem;
+  margin-top: 2rem;
+  border: 1px solid #ddd;
+  overflow: hidden;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  color: #383838;
+  text-align: left;
+  transition: all 350ms ease;
+  background-color: #fff;
+  position: relative;
+  animation-name: movement;
+  animation-duration: 200ms;
+  animation-fill-mode: both;
+}
+.todo_name {
+  width: calc(100% - 8rem);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.todo_top {
+  background-color: #fff;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  padding: 0.75rem 0;
+}
+.todo_button {
+  display: flex;
+  width: 8rem;
+  height: 2rem;
+}
+
+.btn1,
+.todo_input_btn,
+.btn2,
+.todo_add form div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.35rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.todo_add form div {
+  color: #fff;
+  width: 4rem;
+  height: 2.75rem;
+  margin-left: 1rem;
+  background-color: #007bff;
+}
+.btn1 {
+  width: calc(50% - 0.125rem);
+  background-color: #ddd;
+  margin: 0;
+  margin-right: 0.125rem;
+}
+.btn2 {
+  width: calc(50% - 0.125rem);
+  margin-left: 0.125rem;
+  background-color: #fff;
+  color: #dc3545;
+}
+.todo_input {
+  padding-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  z-index: -1;
+  margin-top: -4rem;
+  margin-top: -3.6rem;
+  transition: all 350ms ease;
+}
+
+.todo_input.active {
+  padding-top: 0.75rem;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #ddd;
+  margin-top: 0;
+  z-index: 1;
+}
+.todo_input_field {
+  width: 100%;
+  height: 2.75rem;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.35rem;
+  border: 1px solid #ddd;
+}
+.todo_input_field:focus,
+.todo_add form input:focus {
+  margin-top: 0;
+  border: 1px solid #007bff;
+  box-shadow: none;
+  outline: none;
+}
+.todo_add form input:focus {
+  transition: all 350ms ease;
+}
+.todo_input_btn {
+  color: #fff;
+  height: 2rem;
+  width: 7.5rem;
+  background-color: #88c1fd80;
+  color: #025dbe;
+  overflow: hidden;
+}
+.todo_input_field:focus + .todo_input_btn {
+  display: flex;
+}
+.todo_submit {
+  height: 0 !important;
+  width: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+.todo_input form {
+  height: 3.25rem;
+}
+.todo_dir {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  font-size: 0.85rem;
+  color: #777;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 1;
+  transition: all 350ms ease;
+}
+.todo_dir.hidden {
+  opacity: 0;
+}

@@ -1,0 +1,100 @@
+.studentAssignment_wrapper {
+  width: 100%;
+  min-height: calc(var(--vvh, 1vh) * 100 - 6.5rem);
+  height: auto;
+  background-color: var(--orange);
+  background-color: #fff;
+}
+.studentAss_body {
+  padding: 0;
+}
+.studentAssignment_recent,
+.studentAssignment_body {
+  width: 100%;
+  height: auto;
+  min-height: 5rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem 0;
+}
+.studentAssignment_body_header,
+.studentAssignment_body_header.div2 > div {
+  /* border-bottom: 1px solid #ddd; */
+  width: 100%;
+  font-weight: 600;
+  text-align: left;
+  background-color: #eee;
+  padding: 1rem 0.5rem 0.5rem 0.5rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+.studentAssignment_body_header.div2 {
+  padding: 2rem 0 0 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+.studentAssignment_body_header.div2 > div {
+  width: 100%;
+  background-color: #eee;
+  height: 100%;
+}
+.studentAssignment_div {
+  min-height: 7rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+.studentAssignment_div:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+.studentAssignment_div_head,
+.studentAssignment_div_body {
+  width: 100%;
+  text-align: left;
+  display: flex;
+}
+.studentAssignment_div_head {
+  flex-direction: column;
+}
+.studentAssignment_div_head_subject,
+.studentAssignment_div_head_title,
+.studentAssignment_div_head_posted,
+.studentAssignment_div_head_submit,
+.studentAssignment_div_head_subject {
+  width: 100%;
+  padding-bottom: 0.3rem;
+  text-align: left;
+}
+.studentAssignment_div_head_subject {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+.studentAssignment_div_head_title {
+  font-weight: 500;
+  padding-bottom: 0.75rem;
+}
+.studentAssignment_div_head_posted,
+.studentAssignment_div_head_submit {
+  font-size: 0.85rem;
+  color: #777;
+}
+.studentAssignment_div_head_posted p,
+.studentAssignment_div_head_submit p {
+  margin: 0;
+}
+.studentAssignment_div_head_posted b,
+.studentAssignment_div_head_submit b {
+  font-weight: 500;
+}
+.studentAssignment_div_body {
+  border-top: 1px solid #ddd;
+  padding: 0.75rem 0;
+  min-height: 9rem;
+  display: block;
+}
+.studentAssignment_div_body p b {
+  font-weight: 600;
+}

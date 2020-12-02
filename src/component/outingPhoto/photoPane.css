@@ -1,0 +1,17 @@
+.photoPane_wrapper {
+  width: 100%;
+  height: calc(var(--vvh, 1vh) * 100 - 3.5rem);
+  background-color: #fff;
+  overflow: hidden;
+}
+.photoPane_inner {
+  height: 100%;
+  font-size: 2rem;
+  position: relative;
+}
+.photoPane_inner_div {
+  background-color: #222;
+  background-color: #111;
+  align-items: center;
+  justify-content: center;
+}

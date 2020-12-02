@@ -1,0 +1,48 @@
+.svg_wrapper {
+  padding: 1rem 0;
+}
+.svg_box {
+  margin: 1rem 0;
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+  border: 1px solid #ddd;
+  background-color: var(--blue);
+  overflow: visible;
+}
+.svg_edit {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 1.2rem;
+}
+.svg_edit_1 {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  margin: 0.5rem 0;
+}
+
+.svg_input {
+  width: 100%;
+  height: 3rem;
+  margin: 0.25rem 0;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+}
+.svg_btn_right {
+  margin-right: 0.5rem;
+}
+.svg_btn_left {
+  margin-left: 0.5rem;
+}
+.keyboard_arrow_icon {
+  font-size: 2.5rem !important;
+  -webkit-text-stroke: 0.1rem #fff;
+}
+.rot90 {
+  transform: rotateZ(-90deg);
+}
+.rot-90 {
+  transform: rotateZ(90deg);
+}

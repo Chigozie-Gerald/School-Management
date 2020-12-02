@@ -1,0 +1,19 @@
+.notFound-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: calc(var(--vvh, 1vh) * 20);
+  /* height: calc(var(--vvh, 1vh) * 100); */
+  width: 100%;
+  overflow: hidden;
+}
+.notFound-link {
+  text-decoration: underline;
+}
+.notFound_btn {
+  padding: 0.5rem 1rem;
+  background-color: var(--blue);
+  background-color: var(--pantone);
+  border-radius: 0.25rem;
+  color: #fff;
+  margin-top: 1rem;
+}

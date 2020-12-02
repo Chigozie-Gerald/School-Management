@@ -1,0 +1,83 @@
+.stPane_wrapper {
+  background-color: #fff;
+  margin: 1.5rem 0;
+  padding: 1rem;
+}
+.stPane_left {
+  padding-bottom: 0.5rem;
+}
+.stPane_right_row {
+  padding: 0 1rem;
+  justify-content: space-between;
+}
+.stPane_right_cont {
+  background-color: #fff;
+  height: 1.3rem;
+  width: 1.3rem;
+}
+.stPane_l_img {
+  height: 3rem;
+  width: 3rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.35rem;
+  background-color: #eee;
+}
+.stPane_l_right {
+  margin-left: 1rem;
+}
+.stPane_right_header {
+  padding-bottom: 0.35rem;
+  color: var(--lteColor);
+  font-size: 0.85rem;
+}
+.stPane_l_right_name {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.stPane_l_right_title {
+  color: #666;
+  font-size: 0.85rem;
+  padding: 0.15rem 0;
+}
+.stPane_l_right_title.prof,
+.Ehead_view_txt {
+  padding-top: 0.25rem;
+  color: var(--blue);
+  font-size: 0.9rem;
+  text-decoration: underline;
+}
+.Ehead_view_txt {
+  padding-top: 0;
+}
+.EStaffDet_img {
+  display: flex;
+  max-height: 10rem;
+  position: relative;
+}
+.EStaffDet_img::before {
+  content: "";
+  padding-top: 100%;
+  display: block;
+}
+.EStaffDet_body {
+  padding: 1rem;
+}
+.stPane_right.Ex {
+  border-top: 1px solid #eee;
+  padding: 1rem;
+  padding-top: 0.25rem;
+}
+.EStaffDet_body_right_title {
+  padding: 0.25rem 0;
+  font-size: 0.85rem;
+  color: teal;
+}
+.EStaffDet_body_right_name {
+  font-weight: 500;
+  font-size: 1rem;
+}
+.EStaffDet_body_right_des {
+  color: var(--lteColor);
+  padding: 0.25rem 0;
+  font-size: 0.85rem;
+}

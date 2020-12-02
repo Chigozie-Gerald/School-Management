@@ -1,0 +1,34 @@
+.rowBox {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.rowBox:last-child {
+  border-top: none;
+}
+.rowBox_title_head {
+  min-height: 2.5rem;
+  font-size: 1rem;
+}
+.rowBox_title_btn_div {
+  min-height: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+.rowBox_title_btn {
+  min-height: 1.5rem;
+  padding: 0.15rem 1rem;
+  font-size: 0.9rem;
+  background-color: rgba(255, 176, 7, 0.25);
+  background-color: var(--pantoneLte);
+  border-radius: 0.15rem;
+}
+.rowBox_title_btn.green {
+  background-color: rgba(59, 206, 66, 0.65);
+}
+.rowBox_icon_div i {
+  color: var(--pantone);
+}
+.kkk {
+  font-weight: 700;
+}

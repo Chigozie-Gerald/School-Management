@@ -1,0 +1,26 @@
+.srchHeadInput_wrapper {
+  height: 100%;
+}
+.srchHeadInput_input {
+  border: none;
+  font-size: 1.1rem;
+  caret-color: var(--pantone);
+  color: var(--pantone);
+  height: 100%;
+  width: calc(100% - 2.5rem);
+}
+.srchHeadInput_input::placeholder {
+  color: #999;
+  font-size: 1.1rem;
+}
+.srvhHeader_close_div {
+  height: 100%;
+  width: 2.5rem;
+}
+.srvhHeader_close_div i {
+  text-shadow: none;
+}
+.srvhHeader_close_div i:hover {
+  text-shadow: none;
+  opacity: 1;
+}

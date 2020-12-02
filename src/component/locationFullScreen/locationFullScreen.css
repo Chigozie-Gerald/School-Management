@@ -1,0 +1,28 @@
+.locationFullScreen_wrapper {
+  background-color: #fff7b0;
+  height: calc(var(--vvh, 1vh) * 100);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.locationFullScreen_header {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  position: absolute;
+  top: 1rem;
+  width: 70vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: var(--blue);
+  height: 2.5rem;
+  border-radius: 1.25rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+}
+.location_large_header_icon {
+  -webkit-text-stroke: 0.02rem var(--blue);
+  margin-right: 1rem;
+}

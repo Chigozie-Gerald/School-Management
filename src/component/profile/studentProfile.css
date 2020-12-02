@@ -1,0 +1,252 @@
+.studentProfile_wrapper {
+  width: 100%;
+  min-height: calc(var(--vvh, 1vh) * 100);
+  height: auto;
+  background-color: #fff;
+}
+.studentProfile_body {
+  width: 100%;
+  min-height: calc(var(--vvh, 1vh) * 100 - 9.5rem);
+  height: auto;
+  background-color: #fff;
+}
+.studentProfile_inner_wrapper {
+  width: 100%;
+  min-height: calc(var(--vvh, 1vh) * 100 - 9.5rem);
+  height: auto;
+  background-color: #fff;
+}
+.studentProfile_inner_body {
+  padding: 0.5rem 2rem;
+  background-color: #fff;
+}
+.studentProfile_inner_session_div,
+.studentProfile_inner_term_div,
+.studentProfile_inner_next_div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.studentProfile_inner_session_div,
+.studentProfile_inner_term_div {
+  height: 2.5rem;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #adadad;
+  position: relative;
+}
+.studentProfile_inner_term_div {
+  margin: 1.5rem 0 2.5rem 0;
+}
+.studentProfile_inner_next_div {
+  justify-content: flex-end;
+}
+.studentProfile_inner_next_btn {
+  cursor: pointer;
+  font-size: 0.85rem;
+  min-width: 5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--green);
+  border-radius: 0.25rem;
+  color: #fff;
+  border: none;
+  box-shadow: none !important;
+  outline: none !important;
+  transition: all 200ms ease;
+}
+.studentProfile_inner_next_btn:disabled {
+  cursor: default;
+  opacity: 0.65;
+}
+.studentProfile_inner_session_inner {
+  width: 100%;
+  display: flex;
+  height: 100%;
+}
+.studentProfile_inner_session_float {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: -0.25rem;
+  left: -1px;
+  /* min-width: calc(var(--vvw, 1vw) * 30); */
+  width: 60%;
+  max-width: calc(var(--vvw, 1vw) * 50);
+  max-height: 19rem;
+  padding: 0.5rem 0;
+  height: auto;
+  z-index: 9;
+  background-color: #fff;
+  border-radius: 0.35rem;
+  box-shadow: 1px 2px 12px 2px rgba(92, 92, 92, 0.15);
+  animation-name: slide-down;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-duration: 200ms;
+  animation-fill-mode: both;
+}
+.studentProfile_inner_session_float_inner {
+  width: 100%;
+  min-height: 3rem;
+  font-size: 0.9rem;
+  height: auto;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0.5rem;
+}
+.studentProfile_inner_session_float_inner:hover {
+  background-color: #eee;
+}
+.studentProfile_inner_session_float_inner.header {
+  border-bottom: 1px solid #adadad;
+  color: #666;
+}
+.studentProfile_inner_session_float_inner.header:hover {
+  background-color: #fff;
+}
+.studentProfile_inner_select_div,
+.studentProfile_inner_select_btn_div {
+  width: calc(100% - 2.5rem);
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1rem;
+}
+.studentProfile_inner_select_div b {
+  font-weight: 500;
+}
+.studentProfile_inner_select_btn_div {
+  width: 3rem;
+  padding: 0;
+  justify-content: center;
+}
+.studentProfile_inner_select_option {
+  width: calc(var(--vvw, 1vw) * 100 - 5rem);
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1rem;
+}
+.studentProfile_header {
+  height: 3.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  z-index: 999;
+  background-color: #234;
+  color: #fff;
+  display: flex;
+  position: sticky;
+  -webkit-position: sticky;
+  -moz-position: sticky;
+  -o-positon: sticky;
+  -ms-position: sticky;
+  top: 0;
+  box-shadow: 0px 2px 2px rgb(0, 0, 0, 0.2);
+  transition: all 200ms ease-in-out;
+}
+.studentProfile_header_inner.div1 {
+  width: 2.5rem;
+  height: 100%;
+}
+.studentProfile_header_inner.div2 {
+  height: 100%;
+  color: #fff;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+.studentProfile_header_icon {
+  -webkit-text-stroke: 0.02rem #234;
+}
+/* From App.css */
+.student_profile_header {
+  height: 3.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.student_profile_body {
+  width: 100%;
+  min-height: calc(var(--vvh, 1vh) * 100 - 13rem);
+  height: auto;
+  background-color: #fff;
+  padding: 0.5rem 1rem;
+}
+/* Fess */
+.student_profile_history_wrapper {
+  padding: 0.5rem 1rem;
+  padding-bottom: 0.75rem;
+  min-height: 3.5rem;
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.student_profile_history_wrapper_btn {
+  min-height: 3rem;
+  height: auto;
+  max-width: 100%;
+  background-color: var(--success);
+  background-color: #fff;
+  border-radius: 0.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--blue);
+  border: 1px solid #adadad;
+}
+
+.studentFees_body_inner {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  padding: 0 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+.studentFees_body_inner:first-child {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.studentFees_body_inner:last-child {
+  border-bottom: none;
+}
+.studentFees_body_inner_title {
+  min-height: 3.5rem;
+  width: calc(100% - 2.5rem);
+  padding: 0 0.5rem;
+  /* font-weight: 500; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.studentFees_body_inner_icon_div {
+  width: 2.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms ease;
+}
+.studentFees_body_inner_icon_div:hover {
+  background-color: #eee;
+}
+.studentFees_body_inner_icon_div:hover .keyboard_arrow {
+  -webkit-text-stroke: 0.1rem #eee;
+}
+
+/* Fess end */

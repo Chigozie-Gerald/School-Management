@@ -1,0 +1,17 @@
+.serviceStarted_wrapper {
+  width: 100%;
+  min-height: calc(var(--vvh, 1vh) * 100);
+  height: auto;
+  background-color: #fff;
+  text-align: left;
+  padding: 1rem;
+}
+.serviceStarted_header {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 400;
+  background-color: #fff;
+}

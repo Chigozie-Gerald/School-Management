@@ -1,0 +1,18 @@
+.photoHeader_wrapper {
+  height: 3rem;
+  padding: 0.5rem;
+  background-color: #fff;
+  top: 0;
+}
+.photoHeader_inner {
+  vertical-align: top;
+  height: 100%;
+  color: #333;
+}
+.photoHeader_inner.div1 {
+  width: 2.5rem;
+}
+.photoHeader_inner.div2 {
+  width: calc(100% - 2.5rem);
+  font-size: 1.1rem;
+}
