@@ -11,7 +11,7 @@ import Assignment from "../assignment/assignment";
 import Student from "../student/student";
 import Result from "../result/result";
 import StaffList from "../staffList/staffList";
-import Class from "../class/class";
+import ListOfBooks from "../listOfBooks/listOfBooks";
 // import StaffProfileTable from "./staffProfileTable";
 import NotFound from "../../notFound";
 import { MainSideRight } from "../../profile/studentProfile";
@@ -125,7 +125,7 @@ class StaffProfile extends PureComponent {
         name: "List of Books",
         strict: false,
         link: `${match.url}/lob`,
-        render: Class,
+        render: ListOfBooks,
       },
     ];
     const linkList = Link_Arr.map((elem, n) => (

@@ -1,0 +1,60 @@
+.lob_wrapper {
+  padding: 1rem;
+  background-color: #fff;
+}
+.lob_header {
+  padding: 1rem 0;
+  padding-top: 0;
+}
+.lob_header div {
+  max-width: 10rem;
+  color: #fff;
+  background-color: var(--pantone);
+  border-radius: 0.35rem;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+.lob_header span {
+  font-weight: 500;
+}
+.lobPane_wrapper {
+  margin-bottom: 2rem;
+}
+.lobPane_wrapper:last-child {
+  margin-bottom: 0;
+}
+.lobPane_header {
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+}
+.lobPane {
+  margin-bottom: 1.25rem;
+  background-color: #fff;
+}
+.lobPane_txt {
+  padding: 1rem;
+}
+.lobPane_icon_div {
+  width: 3rem;
+  background-color: #fff;
+  height: 3rem;
+}
+.lobPane_role {
+  font-size: 1rem;
+  padding-bottom: 0.25rem;
+  color: var(--pantone);
+}
+.lobPane_name {
+  font-weight: 450;
+  font-size: 0.85rem;
+  padding: 0.25rem 0;
+}
+.lobPane_name .flex1 {
+  padding-left: 0.5rem;
+}
+.lobPane_icon_div i {
+  color: var(--pantone);
+}
