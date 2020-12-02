@@ -240,9 +240,8 @@ export const ResultUploadClassPane = withRouter(
               ) : (
                 <div>
                   <span className="incompleteRem">
-                    {details.num - details.uploads}
-                  </span>{" "}
-                  results are pending
+                    {details.num - details.uploads} results are pending
+                  </span>
                 </div>
               )}
             </div>

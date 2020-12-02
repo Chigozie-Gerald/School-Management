@@ -41,7 +41,7 @@
 }
 .resultUCP_detail_num {
   padding-bottom: 0.25rem;
-  color: var(--pantone);
+  /* color: var(--pantone); */
   font-weight: 500;
 }
 .resultUCP_detail_comm {
@@ -58,5 +58,6 @@
   color: var(--blue);
 } */
 .resultUCP_detail_comm .incompleteRem {
-  color: var(--red);
+  color: var(--orange);
+  font-weight: 500;
 }
