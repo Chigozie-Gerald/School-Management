@@ -14,7 +14,7 @@ class result extends PureComponent {
     return (
       <Switch>
         <Route
-          path=   {`${match.url}/post`}
+          path={`${match.url}/post`}
           render={(props) => <ResultPost {...props} />}
         />
         <Route
@@ -225,27 +225,22 @@ export const ResultUploadClassPane = withRouter(
             <div className="resultUCP_detail_ses">
               2nd Term, 2018/2019 Academic Session
             </div>
-            <div className="resultUCP_detail_num">
+            <div className="resultUCP_detail_num flex vert_align">
               {details.num} Student{parseInt(details.num) > 1 && "s"}
-              <span className="incompleteRem">
-                {details.num - details.uploads} results are pending
-              </span>
-            </div>
-            <div className="resultUCP_detail_comm">
-              <div>
-                <span className="completeRem">
-                  {details.uploads >= details.num &&
-                    "All students' results uploaded"}
+              {details.num - details.uploads ? (
+                <span className="incompleteRem inline_flex vert_align">
+                  <div className="inline_flex">
+                    <div className="dot"></div>
+                  </div>
+                  {details.num - details.uploads} results are pending
                 </span>
-              </div>
-              {details.uploads9 >= details.num ? (
-                ""
               ) : (
-                <div>
-                  <span className="incompleteRem">
-                    {details.num - details.uploads} results are pending
-                  </span>
-                </div>
+                <span className="completeRem inline_flex vert_align">
+                  <div className="inline_flex">
+                    <div className="dot"></div>
+                  </div>
+                  All Uploaded
+                </span>
               )}
             </div>
           </div>

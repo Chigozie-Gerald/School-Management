@@ -8,12 +8,6 @@
 .studList_wrap_header.result_list.pending {
   background-color: rgba(255, 193, 7, 0.5);
 }
-/* .result_class_list_head {
-  font-weight: 500;
-  font-size: 0.85rem;
-  font-size: 0.9rem;
-} */
-/* ResultUploadClassPane */
 .resultUCP_wrapper {
   margin-bottom: 1.5rem;
   background-color: #fff;
@@ -37,27 +31,16 @@
 }
 .resultUCP_detail_ses {
   padding-bottom: 0.25rem;
-  /* font-weight: 500; */
 }
 .resultUCP_detail_num {
   padding-bottom: 0.25rem;
-  /* color: var(--pantone); */
+  padding-top: 1rem;
+  font-size: 0.8rem;
   font-weight: 500;
 }
-.resultUCP_detail_comm {
-  border-top: 1px solid #ddd;
-  margin-top: 0.25rem;
-  padding-top: 0.25rem;
-}
-.resultUCP_detail_comm > div {
-  display: inline;
-  color: #666;
-}
-/* .resultUCP_detail_comm .completeRem {
-  color: var(--pantone);
-  color: var(--blue);
-} */
-.resultUCP_detail_comm .incompleteRem {
+.resultUCP_detail_num .incompleteRem {
   color: var(--orange);
-  font-weight:    500;
+}
+.resultUCP_detail_num .completeRem {
+  color: var(--green);
 }
