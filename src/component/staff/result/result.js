@@ -235,7 +235,7 @@ export const ResultUploadClassPane = withRouter(
                     "All students' results uploaded"}
                 </span>
               </div>
-              {details.uploads >= details.num ? (
+              {details.uploads9 >= details.num ? (
                 ""
               ) : (
                 <div>
