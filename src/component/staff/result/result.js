@@ -14,7 +14,7 @@ class result extends PureComponent {
     return (
       <Switch>
         <Route
-          path={`${match.url}/post`}
+          path=   {`${match.url}/post`}
           render={(props) => <ResultPost {...props} />}
         />
         <Route
@@ -227,6 +227,9 @@ export const ResultUploadClassPane = withRouter(
             </div>
             <div className="resultUCP_detail_num">
               {details.num} Student{parseInt(details.num) > 1 && "s"}
+              <span className="incompleteRem">
+                {details.num - details.uploads} results are pending
+              </span>
             </div>
             <div className="resultUCP_detail_comm">
               <div>
