@@ -78,14 +78,15 @@
   -moz-position: sticky;
   -o-positon: sticky;
   -ms-position: sticky;
-  box-shadow: 0px 2px 5px rgb(0, 0, 0, 0.2);
-  transition: all 200ms ease-in-out;
+  box-shadow: 0px 1.5px 4px rgb(0, 0, 0, 0.15);
+  transition: all 350ms ease;
 }
 .rowBox_custom_info {
   display: inline-flex;
   background-color: var(--pantoneLte);
   padding: 0 0.5rem;
   margin-top: 0.5rem;
+  font-size: 0.75rem;
   border-radius: 0.25rem;
 }
 .widthAuto {
@@ -140,7 +141,7 @@
 }
 .box_border {
   border-radius: 0.35rem;
-  border: 1px solid #ddd;
+  border: 1px solid #eee;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
 }
 .hide {
@@ -378,9 +379,8 @@
   margin: 0;
 }
 .mainSide_wrapper {
-  width: 17.5rem;
   max-width: 20rem;
-  width: 65%;
+  width: 75%;
   height: 100%;
   z-index: 999;
   overflow: auto;
@@ -392,7 +392,7 @@
   box-shadow: 6px 1px 15px 5px rgba(0, 0, 0, 0.2);
 }
 .mainSide_right_header {
-  padding: 2.5rem 0.5rem 1rem 1rem;
+  padding: 1rem 0.5rem 1rem 1rem;
   background-color: rgb(70, 85, 75);
   box-shadow: 0px 2px 2px rgb(0, 0, 0, 0.2);
   transition: all 200ms ease-in-out;
@@ -452,7 +452,7 @@
   background-color: rgb(40, 55, 45);
 }
 .mainSide_body_footer.right {
-  height: 3rem;
+  height: 2rem;
   background-color: transparent;
 }
 .mainSide_body_footer.myshadow {

@@ -1,15 +1,15 @@
 .rowBox {
   padding: 0.5rem 1rem;
   background-color: #fff;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ddd;
 }
 .rowBox:last-child {
+  border-top: 1px solid #ddd;
   border-top: none;
 }
 .rowBox_title_head {
   min-height: 2.5rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .rowBox_title_btn_div {
   min-height: 1.5rem;

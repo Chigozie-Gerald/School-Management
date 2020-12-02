@@ -3,10 +3,10 @@
 }
 .studList_wrap_header.result_list {
   border-radius: 0;
-  background-color: rgba(51, 185, 82, 0.7);
+  background-color: rgb(179, 221, 189);
 }
 .studList_wrap_header.result_list.pending {
-  background-color: rgba(255, 193, 7, 0.5);
+  background-color: rgb(255, 236, 177);
 }
 .resultUCP_wrapper {
   margin-bottom: 1.5rem;
@@ -35,8 +35,8 @@
 .resultUCP_detail_num {
   padding-bottom: 0.25rem;
   padding-top: 1rem;
-  font-size: 0.8rem;
-  font-weight: 500;
+  font-size: 0.75rem;
+  /* font-weight: 500; */
 }
 .resultUCP_detail_num .incompleteRem {
   color: var(--orange);

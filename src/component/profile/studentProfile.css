@@ -6,6 +6,7 @@
 }
 .studentProfile_body {
   width: 100%;
+  font-size: 0.85rem;
   min-height: calc(var(--vvh, 1vh) * 100 - 9.5rem);
   height: auto;
   background-color: #fff;

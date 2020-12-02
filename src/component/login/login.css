@@ -98,17 +98,17 @@
   padding-top: 0rem;
 }
 .loginBody_btn_wrapper {
-  height: 2.5rem;
   margin-top: 1.5rem;
   padding: 0 1rem;
 }
 .loginBody_btn {
   cursor: pointer;
-  height: 100%;
+  padding: 0.35rem 0;
   border-radius: 0.35rem;
   box-shadow: none !important;
   outline: none !important;
   color: #fff;
+  font-size: 0.85rem;
   background-color: var(--blue);
   transition: all 200ms ease;
 }
@@ -144,7 +144,7 @@
   position: absolute;
   bottom: 1.35rem;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: teal;
   color: #999;
   transition: all 200ms ease;
@@ -170,7 +170,7 @@
 .loginBody_top_title {
   padding: 0 1rem;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .loginBody_submit {
   padding: 0;

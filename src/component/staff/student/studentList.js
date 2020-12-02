@@ -101,7 +101,7 @@ export const StudentListPane = withRouter(
                   Owes school fees
                 </div>
               )}
-              <div className="studList_box_btn_wrap flex flex_left ">
+              <div className="studList_box_btn_wrap inline_flex flex_left ">
                 {txt ? txt : "View Profile"}
               </div>
             </div>

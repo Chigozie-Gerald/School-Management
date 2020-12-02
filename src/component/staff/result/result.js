@@ -80,90 +80,102 @@ class result extends PureComponent {
         />
         <Route
           path={`${match.url}/view/all`}
-          render={(props) => (
-            <div className="profile_min_height div-width-100 p1">
-              <ResultUploadClassPane
-                details={{
-                  name: "JSS3A Maths",
-                  num: 53,
-                  uploads: 53,
-                }}
-              />
-              <ResultUploadClassPane
-                details={{
-                  name: "SS1F Chemistry",
-                  num: 32,
-                  uploads: 1,
-                }}
-              />
-              <ResultUploadClassPane
-                details={{
-                  name: "JSS2A Biology",
-                  num: 47,
-                  uploads: 47,
-                }}
-              />
-              <ResultUploadClassPane
-                details={{
-                  name: "JSS3A Social Studies",
-                  num: 55,
-                  uploads: 17,
-                }}
-              />
-              <ResultUploadClassPane
-                details={{
-                  name: "SS1J Maths",
-                  num: 34,
-                  uploads: 22,
-                }}
-              />
-            </div>
-          )}
+          render={(props) => {
+            const resultUpViewArr = [
+              {
+                name: "JSS3A Maths",
+                num: 53,
+                uploads: 53,
+              },
+              {
+                name: "SS1F Chemistry",
+                num: 32,
+                uploads: 1,
+              },
+              {
+                name: "JSS2A Biology",
+                num: 47,
+                uploads: 47,
+              },
+              {
+                name: "JSS3A Social Studies",
+                num: 55,
+                uploads: 17,
+              },
+              {
+                name: "SS1J Maths",
+                num: 34,
+                uploads: 22,
+              },
+            ];
+            const resultUpViewList = resultUpViewArr
+              .sort((a, b) => b.num - b.uploads - (a.num - a.uploads))
+              .map((elem, n) => (
+                <ResultUploadClassPane
+                  key={`resultUpViewList_${n}`}
+                  details={elem}
+                />
+              ));
+            return (
+              <div className="profile_min_height div-width-100 p1">
+                {resultUpViewList}
+              </div>
+            );
+          }}
         />
         <Route
           exact
           path={`${match.url}/view`}
-          render={(props) => (
-            <div className="profile_min_height div-width-100 flex fd_col">
-              <div className="studList_wrap_header result_class_list_head flex vert_align div-width-100">
-                Showing Uploaded/Pending Results for this Session
-              </div>
-              <div className="flex1 div-width-100 p1">
+          render={(props) => {
+            const resultUploadArr = [
+              {
+                name: "JSS3A Maths",
+                num: 53,
+                uploads: 53,
+              },
+              {
+                name: "JSS3C Physics",
+                num: 46,
+                uploads: 27,
+              },
+            ];
+            const resultUploadList = resultUploadArr
+              .sort((a, b) => b.num - b.uploads - (a.num - a.uploads))
+              .map((elem, n) => (
                 <ResultUploadClassPane
-                  details={{
-                    name: "JSS3A Maths",
-                    num: 53,
-                    uploads: 53,
-                  }}
+                  key={`resultUploadList_${n}`}
+                  details={elem}
                 />
-                <ResultUploadClassPane
-                  details={{
-                    name: "JSS3C Physics",
-                    num: 46,
-                    uploads: 27,
-                  }}
-                />
-                <div className="assCreate_btn div1 center inline_flex div-width-100">
-                  <Link
-                    className="Link"
-                    to={{
-                      pathname: this.props.match.url + "/view/all",
-                    }}
-                  >
-                    View Previously Uploaded Results
-                  </Link>
+              ));
+            return (
+              <div className="profile_min_height div-width-100 flex fd_col">
+                <div className="tll studList_wrap_header result_class_list_head flex vert_align div-width-100">
+                  Uploaded/Pending Results for this Session
+                </div>
+                <div className="flex1 div-width-100 p1">
+                  {resultUploadList}
+                  <div className="assCreate_btn div1 center inline_flex div-width-100">
+                    <Link
+                      className="Link"
+                      to={{
+                        pathname: this.props.match.url + "/view/all",
+                      }}
+                    >
+                      View Previously Uploaded Results
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-          )}
+            );
+          }}
         />
         <Route
           exact
           path={`${match.url}`}
           render={() => (
-            <div className="div-width-100 profile_min_height pt1">
+            <div className="div-width-100 profile_min_height">
               <RowBox
-                padding="1rem"
+                padding="0.5rem 1rem"
                 title={
                   <div className="div-width-100 flex vert_align">
                     <i
@@ -176,9 +188,9 @@ class result extends PureComponent {
                 link={match.url + "/post"}
               />
               <RowBox
-                padding="1rem"
+                padding="0.5rem 1rem"
                 title={
-                  <div className="div-width-100 flex">
+                  <div className="div-width-100 flex vert_align">
                     <i
                       className="material-icons view_list pr1"
                       style={{ color: "var(--pantone)" }}

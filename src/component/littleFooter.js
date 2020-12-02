@@ -6,11 +6,11 @@ class LittleFooter extends PureComponent {
   render() {
     var year = new Date().getFullYear();
     return (
-      <div className="little_footer_wrapper">
+      <div className="little_footer_wrapper div-width-100 center">
         <span className="little_footer_span1">
           {this.props.spanText1 ? this.props.spanText1 : "XenSites"} &copy;
         </span>
-        <span className="little_footer_span2">
+        <span className="little_footer_span2 center">
           <div></div>
         </span>
         <span className="little_footer_span3">{`2019 - ${year}`}</span>

@@ -39,9 +39,9 @@ class Assignment extends PureComponent {
         <Route
           path={`${match.url}/init`}
           render={() => (
-            <div className="div-width-100 profile_min_height pt1">
+            <div className="div-width-100 profile_min_height">
               <RowBox
-                padding="1rem"
+                padding="0.5rem 1rem"
                 title={
                   <div className="div-width-100 flex vert_align">
                     <i
@@ -54,7 +54,7 @@ class Assignment extends PureComponent {
                 link={match.url + "/create"}
               />
               <RowBox
-                padding="1rem"
+                padding="0.5rem 1rem"
                 title={
                   <div className="div-width-100 flex">
                     <i

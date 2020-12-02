@@ -32,23 +32,8 @@ class PeriodInit extends PureComponent {
           path={`${match.url}`}
           render={() => (
             <div className="div-width-100 profile_min_height periodInit_wrapper">
-              {/* <RowBox
-                info="You have two periods today"
-                title="Periods you take"
-                // title={
-                //   <div className="div-width-100 flex vert_align">
-                //     <i
-                //       className="material-icons library_add pr1"
-                //       style={{ color: "var(--pantone)" }}
-                //     ></i>
-                //     <span className="pr1 flex1">Periods you take</span>
-                //   </div>
-                // }
-                padding="1rem"
-                link={`${match.url}/period`}
-              /> */}
               <RowBox
-                padding="1rem"
+                padding="0.5rem 1rem"
                 title={
                   <div className="div-width-100 flex vert_align">
                     <i
@@ -76,7 +61,7 @@ class PeriodInit extends PureComponent {
                     <span className="pr1 flex1">View Timetable</span>
                   </div>
                 }
-                padding="1rem"
+                padding="0.5rem 1rem"
                 link={`${match.url}/timetable`}
               />
             </div>
