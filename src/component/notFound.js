@@ -13,7 +13,11 @@ class NotFound extends PureComponent {
     return (
       <div
         className="notFound-wrapper"
-        style={{ height: height, backgroundColor: "var(--lteBacColor)" }}
+        style={{
+          height: height,
+          flex: "1",
+          backgroundColor: "var(--lteBacColor)",
+        }}
       >
         <div>
           <h1>404 Not Found</h1>

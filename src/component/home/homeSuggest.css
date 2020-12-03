@@ -5,7 +5,7 @@
   height: auto;
   padding: 1rem;
   background-color: rgb(255, 217, 217);
-  background-color: rgb(255, 235, 235);
+  background-color: rgb(255, 235, 235, 0.5);
 }
 .homeSuggest_top_header {
   width: 100%;

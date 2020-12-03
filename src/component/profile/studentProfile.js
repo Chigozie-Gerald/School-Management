@@ -1,7 +1,6 @@
 import React, { PureComponent } from "react";
 import "./studentProfile.css";
 import TopHeader from "../topHeader";
-import LowHeader from "../lowHeader";
 import { handleOpen, openHandlerDefault } from "../utils/openHandler";
 import { Link, Switch, Route } from "react-router-dom";
 import NotFound from "../notFound";
@@ -126,8 +125,8 @@ class StudentProfile extends PureComponent {
       { return: false, link: `${match.url}/payment`, render: PaymentPage },
       { return: false, link: `${match.url}/receipt`, render: StudentReceipt },
     ];
-    const linkList = Link_Arr.map((elem, n) =>
-      elem.return ? null : (
+    const linkList = Link_Arr.filter((el) => el.return !== false).map(
+      (elem, n) => (
         <div
           key={`${n}-student-profile-links`}
           className={
@@ -176,12 +175,22 @@ class StudentProfile extends PureComponent {
             <div className="studentProfile_header_inner div2 vert_align flex flex1 tll">
               <span className="div-width-100 ellipsis">Student Profile</span>
             </div>
+            <div
+              style={{ visibility: this.state.menu ? "hidden" : "visible" }}
+              className="lowHeader_wrapper_icon_div profile box_border center"
+            >
+              <i
+                onClick={this.handleOpen}
+                className="material-icons menu lowHeader_wrapper_icon"
+              ></i>
+            </div>
           </div>
         ) : (
           <TopHeader
             image="./social.jpg"
             title="Ijomah Chigozie G."
             subTitle="SS3A"
+            handleOpen={this.handleOpen}
             makeShadow={this.state.makeShadow}
           />
         )}
@@ -212,7 +221,6 @@ class StudentProfile extends PureComponent {
           </Switch>
           <LittleFooter />
         </div>
-        <LowHeader handleOpen={this.handleOpen} isOpen={this.state.menu} />
       </div>
     );
   }

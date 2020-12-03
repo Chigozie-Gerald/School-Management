@@ -117,8 +117,6 @@ class NewsPage extends PureComponent {
                 <i className="material-icons work"></i>
                 <i className="material-icons work"></i>
               </div>
-              {/* Heloooooooooooooooooo */}
-              {/* <i className="material-icons work inline_flex hide"></i> */}
             </div>
             <p>
               <b>Let's help your reach your customers</b>
@@ -128,7 +126,7 @@ class NewsPage extends PureComponent {
               enjoy the regional distribution and seamless contact for your
               products
             </div>
-            <div className="serviceAd_btn_div flex flex_right div-width-100">
+            <div className="serviceAd_btn_div center div-width-100">
               <div className="serviceAd_btn center">Get Started</div>
             </div>
           </div>

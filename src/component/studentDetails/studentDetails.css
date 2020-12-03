@@ -45,7 +45,7 @@
   height: 3rem;
   padding: 2.5px;
   border: 1.5px solid var(--darkPantone);
-  background-color: #eee;
+  background-color: #fff;
 }
 @media (max-width: 360px) {
   .studentDetails_title_img_div {

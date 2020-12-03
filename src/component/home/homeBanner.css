@@ -1,10 +1,4 @@
 .homeBanner_wrapper {
-  height: calc(100vmin - 3rem);
-  width: 100%;
-  background-color: rgb(60, 75, 65);
+  height: calc(100vmax - 6.25rem);
   background-color: #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
 }

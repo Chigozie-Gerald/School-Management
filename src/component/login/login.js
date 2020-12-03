@@ -2,7 +2,7 @@ import React, { Component, PureComponent } from "react";
 // import { connect } from 'react-redux'
 import "./login.css";
 import LoginBody from "./loginBody";
-import { Link, Switch, Route } from "react-router-dom";
+import { Link, Switch, Route, Redirect } from "react-router-dom";
 import NotFound from "../notFound";
 import LoginStaffBody from "./loginStaffBody";
 import LittleFooter from "../littleFooter";
@@ -34,7 +34,9 @@ export class Login extends Component {
   }
   render() {
     const { history } = this.props;
-    return (
+    return this.props.location.pathname === "/login" ? (
+      <Redirect to={{ pathname: "/login/student" }} replace />
+    ) : (
       <div className="login_wrapper div-width-100 flex fd_col tll">
         <div
           className={`login_header header_sticly flex fd_col ${
@@ -108,7 +110,7 @@ export class Login extends Component {
             </div>
           </div>
         </div>
-        <div className="login_body div-width-100 flex1">
+        <div className="login_body div-width-100 flex fd_col flex1">
           <Switch>
             <Route
               exact

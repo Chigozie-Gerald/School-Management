@@ -9,7 +9,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0.5rem 1rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   display: flex;
   align-items: center;
 }
@@ -92,14 +92,13 @@
 .homeNews_body_inner_div2_header {
   min-height: 2rem;
   width: 100%;
-  font-weight: 500;
 }
 .homeNews_body_inner_div2_body {
   flex: 1;
   padding-top: 0.5rem;
   width: 100%;
-  color: #888;
-  font-size: 0.9rem;
+  color: #777;
+  font-size: 0.8rem;
   /* background-color: #eee; */
 }
 .homeNews_body_inner.div3 {

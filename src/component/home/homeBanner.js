@@ -5,7 +5,7 @@ import "./homeBanner.css";
 class HomeBanner extends PureComponent {
   render() {
     return (
-      <div className="homeBanner_wrapper">
+      <div className="homeBanner_wrapper center hide div-width-100">
         <img
           src={require("../mediaFiles/pencil.jpg")}
           alt="banner"

@@ -33,7 +33,7 @@
   height: 2.5rem;
   margin-top: 1rem;
   border-radius: 0.25rem;
-  border: 1px solid #adadad;
+  border: 1px solid #ddd;
   position: relative;
 }
 .studentProfile_inner_term_div {
@@ -100,7 +100,7 @@
   background-color: #eee;
 }
 .studentProfile_inner_session_float_inner.header {
-  border-bottom: 1px solid #adadad;
+  border-bottom: 1px solid #ddd;
   color: #666;
 }
 .studentProfile_inner_session_float_inner.header:hover {
@@ -137,7 +137,7 @@
   padding: 0.5rem;
   padding-right: 1rem;
   z-index: 999;
-  background-color: rgb(70, 85, 75);
+  background-color: var(--appHeaderColor);
   background-color: var(--darkPantone);
   /* background-color: var(--pantone); */
   color: #fff;
@@ -163,7 +163,7 @@
 }
 .studentProfile_header_icon {
   /* background-color: rgb(70, 85, 75, 0.1); */
-  -webkit-text-stroke: 0.02rem rgb(70, 85, 75);
+  -webkit-text-stroke: 0.02rem var(--appHeaderColor);
   -webkit-text-stroke: 0.02rem var(--darkPantone);
 }
 /* From App.css */
@@ -213,7 +213,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid var(--blue);
-  border: 1px solid #adadad;
+  border: 1px solid #ddd;
 }
 
 .studentFees_body_inner {

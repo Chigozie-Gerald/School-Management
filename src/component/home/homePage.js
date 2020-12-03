@@ -47,7 +47,6 @@ class HomePage extends PureComponent {
         <MainTitle menu={this.props.menu} />
         <MainHeader
           makeShadow={this.state.makeShadow}
-          bColor="rgb(70, 85, 75)"
           handleMenuClose={this.props.handleMenuClose}
           handleMenuOpen={this.props.handleMenuOpen}
           menu={this.props.menu}

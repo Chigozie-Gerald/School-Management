@@ -7,8 +7,8 @@ class MainSide extends PureComponent {
   render() {
     return (
       <div className="mainSide_wrapper">
-        <div className="mainSide_header">
-          <div className="mainSide_header_left_div">
+        <div className="mainSide_header flex">
+          <div className="mainSide_header_left_div flex1 inline_flex vert_align">
             <div className="mainSide_header_left_img">
               <img
                 src={require("./social.jpg")}

@@ -5,6 +5,7 @@
   text-align: center;
   background-color: #fff;
   color: #494949;
+  --appHeaderColor: rgb(70, 85, 75);
   --lteColor: rgb(146, 138, 138);
   --lteBacColor: rgb(245, 245, 245);
   --lteBacColor: rgba(245, 245, 245);
@@ -346,11 +347,12 @@
 .main_header_side_right {
   z-index: -1;
   overflow: hidden;
-  width: calc(var(--vvw, 1vw) * 100);
+  width: 100%;
   flex: 1;
   background-color: transparent;
   position: fixed;
   left: 0;
+  right: 0;
   top: 0;
   bottom: 0;
   margin-left: 100%;
@@ -390,7 +392,7 @@
 }
 .mainSide_wrapper_close_icon i {
   font-size: 1.5rem;
-  color: rgb(70, 85, 75) !important;
+  color: var(--appHeaderColor) !important;
   /* color:; */
   opacity: 1;
   text-shadow: none;
@@ -405,7 +407,7 @@
   display: flex;
   text-align: left;
   flex-direction: column;
-  /* background-color: rgb(70, 85, 75); */
+  /* background-color: var(--appHeaderColor); */
   background-color: #fff;
   box-shadow: 6px 1px 15px 5px rgba(0, 0, 0, 0.2);
 }
@@ -417,7 +419,7 @@
 .mainSide_right_header {
   padding: 1rem 1.5rem 1rem 2rem;
   background-color: var(--darkPantone);
-  /* background-color: rgb(70, 85, 75); header_right */
+  /* background-color: var(--appHeaderColor); header_right */
   box-shadow: 0px 2px 2px rgb(0, 0, 0, 0.2);
   transition: all 200ms ease-in-out;
   color: #fff;
@@ -444,16 +446,18 @@
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   cursor: pointer;
-  /* color: rgb(70, 85, 75); header_right */
+  /* color: var(--appHeaderColor); header_right */
   color: var(--darkPantone);
-  transition: all 500ms ease;
-}
-.mainSide_right_body_inner:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+  transition: all 500ms ease-in;
 }
 .mainSide_right_body_inner.active {
   background-color: rgb(53, 73, 94, 0.1);
   /* background-color: rgb(70, 85, 75, 0.1); header_right */
+}
+.mainSide_right_body_inner:hover {
+  background-color: rgb(53, 73, 94, 0.1);
+  /* color: red; */
+  /* transition: all 350ms ease; */
 }
 .mainSide_right_header_img_div {
   width: 2.25rem;
