@@ -31,7 +31,7 @@
 .studentDetails_title_name {
   font-size: 1rem;
   font-weight: 500;
-  color: var(--pantone);
+  color: var(--darkPantone);
 }
 .studentDetails_title_class {
   font-size: 0.85rem;
@@ -41,9 +41,17 @@
   color: #777;
 }
 .studentDetails_title_img_div {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 2.5px;
+  border: 1.5px solid var(--darkPantone);
   background-color: #eee;
+}
+@media (max-width: 360px) {
+  .studentDetails_title_img_div {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
 }
 
 .studentDetails_body {

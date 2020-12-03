@@ -4,18 +4,17 @@
   background-color: var(--lteBacColor);
 }
 .staff_student_big_btn {
-  padding: 1.5rem;
-  gap: 1.5rem;
+  padding: 1rem;
+  gap: 1rem;
   grid-auto-rows: minmax(auto, auto);
   background-color: #fff;
   position: relative;
 }
 .staff_student_big_box {
   background-color: var(--pantone);
-  min-height: 3.5rem;
+  min-height: 2.75rem;
   color: #fff;
   padding: 0.5rem;
-  font-weight: 500;
   font-size: 1rem;
   border-radius: 0.35rem;
 }

@@ -6,10 +6,10 @@ import { withRouter } from "react-router-dom";
 
 class SearchHeader extends PureComponent {
   render() {
-    const { color, history } = this.props;
+    const { color, history, handleOpen, isOpen } = this.props;
     return (
-      <div className="topHeader_header header_sticky flex fd_col staff_profile_header">
-        <div className="topHeader_header_top hide flex div-width-100">
+      <div className="topHeader_header header_sticky flex vert_align staff_profile_header">
+        <div className="topHeader_header_top search hide flex flex1">
           <div
             className="topHeader_header_top_inner center div1"
             onClick={() => history.goBack()}
@@ -28,6 +28,15 @@ class SearchHeader extends PureComponent {
               cancelSearch={this.props.cancelSearch}
             />
           </div>
+        </div>
+        <div
+          style={{ visibility: isOpen ? "hidden" : "visible" }}
+          className="lowHeader_wrapper_icon_div search"
+        >
+          <i
+            onClick={handleOpen}
+            className="material-icons menu lowHeader_wrapper_icon"
+          ></i>
         </div>
       </div>
     );

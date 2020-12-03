@@ -40,11 +40,7 @@
 .studList_box_right {
   padding: 0 1.5rem;
 }
-.studList_box_title,
-.studList_box_post,
-.studList_box_btn_wrap {
-  /* padding-bottom: 0.15rem; */
-}
+
 .studList_box_title {
   font-size: 1rem;
 }

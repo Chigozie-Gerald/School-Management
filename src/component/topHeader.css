@@ -9,6 +9,9 @@
   height: 3.5rem;
   padding-right: 1rem;
 }
+.topHeader_header_top.search {
+  padding-right: 0;
+}
 .topHeader_top_header_icon {
   color: #212529;
   -webkit-text-stroke: 0.02rem #fff;

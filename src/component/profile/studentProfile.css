@@ -7,7 +7,7 @@
 .studentProfile_body {
   width: 100%;
   font-size: 0.85rem;
-  min-height: calc(var(--vvh, 1vh) * 100 - 9.5rem);
+  min-height: calc(var(--vvh, 1vh) * 100 - 3.5rem);
   height: auto;
   background-color: #fff;
 }
@@ -135,8 +135,11 @@
   height: 3.5rem;
   width: 100%;
   padding: 0.5rem;
+  padding-right: 1rem;
   z-index: 999;
-  background-color: #234;
+  background-color: rgb(70, 85, 75);
+  background-color: var(--darkPantone);
+  /* background-color: var(--pantone); */
   color: #fff;
   display: flex;
   position: sticky;
@@ -159,7 +162,9 @@
   font-size: 1rem;
 }
 .studentProfile_header_icon {
-  -webkit-text-stroke: 0.02rem #234;
+  /* background-color: rgb(70, 85, 75, 0.1); */
+  -webkit-text-stroke: 0.02rem rgb(70, 85, 75);
+  -webkit-text-stroke: 0.02rem var(--darkPantone);
 }
 /* From App.css */
 .student_profile_header {

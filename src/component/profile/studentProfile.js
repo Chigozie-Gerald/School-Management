@@ -247,7 +247,13 @@ export class MainSideRight extends PureComponent {
           className={menu ? "main_header_side_float" : "noSHOW"}
           onClick={handleOpen}
         ></div>
-        <div className="mainSide_wrapper">
+        <div className="mainSide_wrapper rel">
+          <div
+            onClick={handleOpen}
+            className="mainSide_wrapper_close_icon rad_50 center"
+          >
+            <i className="material-icons close"></i>
+          </div>
           <div
             className={`mainSide_right_header div-width-100 flex ${
               makeRightShadow ? "" : " noSHADOW"
@@ -271,14 +277,15 @@ export class MainSideRight extends PureComponent {
             onScroll={() => {
               if (this.rightList.scrollTop > 0) {
                 handlemakeRightShadow(true);
-                if (
-                  Math.floor(this.rightList.scrollTop) !==
-                  this.rightList.style.height
-                ) {
-                  handlemakeRightFooterShadow(true);
-                }
+                handlemakeRightFooterShadow(
+                  Math.floor(
+                    this.rightList.scrollTop +
+                      parseInt(getComputedStyle(this.rightList).height)
+                  ) <
+                    this.rightList.scrollHeight - 2
+                );
               } else {
-                handlemakeRightShadow(false);
+                handlemakeRightShadow(true);
               }
             }}
           >

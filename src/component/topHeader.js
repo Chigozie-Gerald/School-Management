@@ -34,7 +34,7 @@ class TopHeader extends Component {
   }
 
   render() {
-    const { image, title, subTitle, history } = this.props;
+    const { image, title, subTitle, history, isOpen, handleOpen } = this.props;
     return (
       <div
         className={`topHeader_header header_sticky flex fd_col ${
@@ -46,7 +46,10 @@ class TopHeader extends Component {
             className="topHeader_header_top_inner center div1"
             onClick={() => history.goBack()}
           >
-            <i className="material-icons arrow_back arrow_back_icon white"></i>
+            <i
+              style={{ visibility: isOpen ? "hidden" : "visible" }}
+              className="material-icons arrow_back arrow_back_icon white"
+            ></i>
           </div>
           <div className="topHeader_header_top_inner flex vert_align flex_left div2">
             <div className="topHeader_header_top_inner_img_div rad_50 hide center">
@@ -64,6 +67,15 @@ class TopHeader extends Component {
                 </span>
               </div>
             </div>
+          </div>
+          <div
+            style={{ visibility: isOpen ? "hidden" : "visible" }}
+            className="lowHeader_wrapper_icon_div"
+          >
+            <i
+              onClick={handleOpen}
+              className="material-icons menu lowHeader_wrapper_icon"
+            ></i>
           </div>
         </div>
       </div>

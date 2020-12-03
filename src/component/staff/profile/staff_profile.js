@@ -3,7 +3,7 @@ import "../../profile/studentProfile.css";
 import "./staff_profile.css";
 import { Link, Switch, Route } from "react-router-dom";
 import { handleOpen, openHandlerDefault } from "../../utils/openHandler";
-import LowHeader from "../../lowHeader";
+// import LowHeader from "../../lowHeader";
 import TopHeader from "../../topHeader";
 import PeriodInit from "../period/periodInit";
 import StudentDetails from "../../studentDetails/studentDetails";
@@ -177,9 +177,20 @@ class StaffProfile extends PureComponent {
             <div className="studentProfile_header_inner div2 vert_align flex flex1 tll">
               <span className="div-width-100 ellipsis">Staff Profile</span>
             </div>
+            <div
+              style={{ visibility: this.state.menu ? "hidden" : "visible" }}
+              className="lowHeader_wrapper_icon_div profile box_border center"
+            >
+              <i
+                onClick={this.handleOpen}
+                className="material-icons menu lowHeader_wrapper_icon"
+              ></i>
+            </div>
           </div>
         ) : this.props.location.pathname === this.props.match.url + "/class" ? (
           <SearchHeader
+            handleOpen={this.handleOpen}
+            isOpen={this.state.menu}
             handleChange={this.handleChange}
             cancelSearch={this.cancelSearch}
             value={this.state.classSearch}
@@ -190,6 +201,8 @@ class StaffProfile extends PureComponent {
           />
         ) : this.props.location.pathname === this.props.match.url + "/staff" ? (
           <SearchHeader
+            handleOpen={this.handleOpen}
+            isOpen={this.state.menu}
             handleChange={this.handleChange}
             cancelSearch={this.cancelSearch}
             name="staffSearch"
@@ -203,6 +216,8 @@ class StaffProfile extends PureComponent {
             image="./social.jpg"
             title="Dr. Nwokoye Tochukwu"
             subTitle="Form Teacher: JSS3A"
+            isOpen={this.state.menu}
+            handleOpen={this.handleOpen}
           />
         )}
         <MainSideRight
@@ -212,6 +227,7 @@ class StaffProfile extends PureComponent {
           makeRightFooterShadow={this.state.makeRightFooterShadow}
           name="Dr. Nwokoye Tochukwu"
           status="Form Teacher: JSS3A"
+          isOpen={this.state.menu}
           handlemakeRightShadow={this.handlemakeRightShadow}
           linkList={linkList}
           handlemakeRightFooterShadow={this.handlemakeRightFooterShadow}
@@ -231,7 +247,7 @@ class StaffProfile extends PureComponent {
           </Switch>
           <LittleFooter />
         </div>
-        <LowHeader handleOpen={this.handleOpen} isOpen={this.state.menu} />
+        {/* <LowHeader handleOpen={this.handleOpen} isOpen={this.state.menu} /> */}
       </div>
     );
   }
