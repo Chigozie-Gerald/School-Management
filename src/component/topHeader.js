@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 import { withRouter } from "react-router-dom";
 import "./topHeader.css";
 
-class TopHeader extends Component {
+class TopHeader extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {

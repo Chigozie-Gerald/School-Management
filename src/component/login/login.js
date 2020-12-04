@@ -1,4 +1,4 @@
-import React, { Component, PureComponent } from "react";
+import React, { PureComponent } from "react";
 // import { connect } from 'react-redux'
 import "./login.css";
 import LoginBody from "./loginBody";
@@ -7,7 +7,7 @@ import NotFound from "../notFound";
 import LoginStaffBody from "./loginStaffBody";
 import LittleFooter from "../littleFooter";
 
-export class Login extends Component {
+export class Login extends PureComponent {
   constructor(props) {
     super(props);
     this.handleScroll = this.handleScroll.bind(this);

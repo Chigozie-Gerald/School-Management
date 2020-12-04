@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 // import { Link } from "react-router-dom";
 import { LoginForm } from "./login";
 // import { connect } from 'react-redux'
 
-export class LoginStaffBody extends Component {
+export class LoginStaffBody extends PureComponent {
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);

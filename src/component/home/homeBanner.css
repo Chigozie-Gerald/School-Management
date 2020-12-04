@@ -2,3 +2,8 @@
   height: calc(100vmax - 6.25rem);
   background-color: #ddd;
 }
+@media (min-width: 768px) {
+  .homeBanner_wrapper {
+    height: calc(100vmin - 6.25rem);
+  }
+}
