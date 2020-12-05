@@ -6,6 +6,7 @@ import { Link, Route, Switch } from "react-router-dom";
 import ServiceSearch from "../serviceSearch/serviceSearch";
 import ServicePane from "../servicePane/servicePane";
 import NotFound from "../notFound";
+// import { colorGenerator } from "../utils/indexHandler";
 // import { connect } from "react-redux";
 
 class Service extends PureComponent {
@@ -61,7 +62,10 @@ class Service extends PureComponent {
     const service_arr = [1, 2, 3, 4, 5, 6];
     let serviceList = service_arr.map((ser, n) => {
       return (
-        <div className="service_pane rel div-width-100" key={n}>
+        <div
+          className="service_pane rel box_border noBorder div-width-100"
+          key={n}
+        >
           <Link
             className="Link_block blue_link link_Float"
             to={{ pathname: `/services/${n}` }}
@@ -106,7 +110,7 @@ class Service extends PureComponent {
             >
               <i className="material-icons arrow_back arrow_back_icon service_header_inner_icon"></i>
             </div>
-            <div className="service_header_inner flex vert_align horiz_align div2">
+            <div className="service_header_inner pl1 flex vert_align horiz_align div2">
               <SearchBox
                 focusFunc={() => this.focusFunc(`${match.url}/search`)}
                 services={this.state.services}
@@ -138,34 +142,43 @@ class Service extends PureComponent {
               <div>
                 <div className="service_body div-width-100">
                   {/* Intro Header to Services */}
-                  <div className="service_top div-width-100 rel">
-                    <div className="service_top_front div-width-100 flex vert_align flex_right">
-                      <i className="material-icons help_outline center"></i>
-                    </div>
-                    <div className="service_body_add_div_title div-width-100 center">
-                      Grow your business with us!
-                    </div>
-                    {/* Description and button */}
-                    <div className="service_body_btn_div flex fd_col vert_align div-width-100">
-                      <div className="service_body_btn_des div-width-100">
-                        You can join our community by getting started
+                  <div className="service_top flex vert_adlign div-width-100 rel">
+                    <div className="flex2 pr1 pl1 flex fd_col center">
+                      <div className="service_top_front div-width-100 flex vert_align flex_right">
+                        <i className="material-icons help_outline center"></i>
                       </div>
-                      <div className="service_body_btn ellipsis center">
-                        <Link
-                          to={{ pathname: "/services/get_started" }}
-                          className="Link"
-                        >
-                          Get Started
-                        </Link>
+                      <div className="service_body_add_div_title div-width-100 center">
+                        Grow your business with us!
+                      </div>
+                      {/* Description and button */}
+                      <div className="service_body_btn_div flex fd_col vert_align div-width-100">
+                        <div className="service_body_btn_des div-width-100">
+                          Our School helps you to reach numerous potential
+                          customers across our space. Join our community by
+                          getting started{" "}
+                          {/* <i className="material-icons archive"></i> */}
+                        </div>
+                        <div className="service_body_btn ellipsis center">
+                          <Link
+                            to={{ pathname: "/services/get_started" }}
+                            className="Link"
+                          >
+                            Get Started
+                          </Link>
+                        </div>
                       </div>
                     </div>
+
+                    <div className="flex flex1 service_body_banner"></div>
                   </div>
                   {/* Services Pane and Body */}
                   <div className="service_body_wrapper div-width-100">
                     <div className="service_body_wrapper_header flex vert_align flex_left div-width-100">
                       Explore Services
                     </div>
-                    {serviceList}
+                    <div className="service_body_wrapper_inner div-width-100">
+                      {serviceList}
+                    </div>
                   </div>
                 </div>
                 {/* Footer */}

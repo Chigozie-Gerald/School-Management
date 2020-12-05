@@ -64,7 +64,7 @@ class Gallery extends PureComponent {
               <div className="gallery_body_pane_float_header ellipsis flex vert_align flex_left div-width-100">
                 <i className="material-icons photo"></i> {elem.total}
               </div>
-              {elem.des}
+              <span className="p1">{elem.des}</span>
             </div>
           </Link>
         </div>

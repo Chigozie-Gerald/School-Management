@@ -257,6 +257,9 @@
 .flex1 {
   flex: 1;
 }
+.flex2 {
+  flex: 2;
+}
 .center {
   display: flex;
   align-items: center;
@@ -333,7 +336,7 @@
 .main_header_side {
   z-index: -1;
   overflow: hidden;
-  width: calc(var(--vvw, 1vw) * 100);
+  width: 100%;
   flex: 1;
   background-color: transparent;
   position: fixed;
@@ -474,7 +477,7 @@
 .mainSide_body_footer {
   width: 100%;
   height: 2rem;
-  color: #fff;
+  color: #666;
   font-size: 0.85rem;
   display: flex;
   justify-content: center;
@@ -483,7 +486,8 @@
   white-space: nowrap;
   align-items: center;
   transition: all 350ms ease;
-  background-color: rgb(40, 55, 45);
+  border-top: 1px solid #eee;
+  background-color: white;
 }
 .mainSide_body_footer.right {
   height: 2rem;
@@ -495,6 +499,7 @@
 /* Side ends */
 
 .blue_link:hover {
+  transition: all 2000ms ease;
   background-color: rgba(0, 123, 255, 0.3);
 }
 .my_input_submit {

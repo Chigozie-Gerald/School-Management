@@ -16,9 +16,19 @@ class MainSide extends PureComponent {
                 className="mainSide_header_img"
               />
             </div>
+            <div className="mainSide_header_r pl1 flex fd_col">
+              <div className="mainSide_header_tile_name div-width-100">
+                <span className="div-width-100 ellipsis">
+                  King's College, Lagos
+                </span>
+              </div>
+              <div className="mainSide_header_tile_motto div-width-100">
+                <span className="div-width-100 ellipsis">Spero Lucem</span>
+              </div>
+            </div>
           </div>
           <i
-            className="material-icons close"
+            className="material-icons close center"
             onClick={this.props.handleMenuClose}
           ></i>
         </div>
