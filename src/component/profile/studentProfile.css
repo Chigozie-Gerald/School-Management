@@ -68,47 +68,10 @@
   display: flex;
   height: 100%;
 }
-.studentProfile_inner_session_float {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: -0.25rem;
-  left: -1px;
-  /* min-width: calc(var(--vvw, 1vw) * 30); */
-  width: 60%;
-  max-width: calc(var(--vvw, 1vw) * 50);
-  max-height: 19rem;
-  padding: 0.5rem 0;
-  height: auto;
-  z-index: 9;
-  background-color: #fff;
-  border-radius: 0.35rem;
-  box-shadow: 1px 2px 12px 2px rgba(92, 92, 92, 0.15);
-  animation-name: slide-down;
-  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  animation-duration: 200ms;
-  animation-fill-mode: both;
-}
-.studentProfile_inner_session_float_inner {
-  width: 100%;
-  min-height: 3rem;
+.select_out_header {
+  font-weight: 500;
   font-size: 0.9rem;
-  height: auto;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0 0.5rem;
-}
-.studentProfile_inner_session_float_inner:hover {
-  background-color: #eee;
-}
-.studentProfile_inner_session_float_inner.header {
-  border-bottom: 1px solid #ddd;
-  color: #666;
-}
-.studentProfile_inner_session_float_inner.header:hover {
-  background-color: #fff;
+  padding: 0.5rem 1rem;
 }
 .studentProfile_inner_select_div,
 .studentProfile_inner_select_btn_div {

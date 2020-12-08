@@ -92,18 +92,21 @@ class Timetable extends PureComponent {
           path={`${match.url}`}
           render={() => {
             return (
-              <SelectPage
-                pathLink={`${this.props.match.url}/grid`}
-                btnText="View TimeTable"
-                txt1="Select Session"
-                list1={[
-                  "2016/2017 Session",
-                  "2017/2018 Session",
-                  "2018/2019 Session",
-                ]}
-                txt2="Select Term"
-                list2={["1st term", "2nd Term", "3rd Term"]}
-              />
+              <div className="tll div-width-100 flex fd_col flex1">
+                <span className="select_out_header">Check Timetable</span>
+                <SelectPage
+                  pathLink={`${this.props.match.url}/grid`}
+                  btnText="View TimeTable"
+                  txt1="Select Session"
+                  list1={[
+                    "2016/2017 Session",
+                    "2017/2018 Session",
+                    "2018/2019 Session",
+                  ]}
+                  txt2="Select Term"
+                  list2={["1st term", "2nd Term", "3rd Term"]}
+                />
+              </div>
             );
           }}
         />
