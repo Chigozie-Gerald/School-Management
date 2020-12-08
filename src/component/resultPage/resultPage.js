@@ -1,16 +1,16 @@
 import React, { PureComponent } from "react";
 import "./resultPage.css";
 import { Redirect } from "react-router-dom";
+import { link } from "../utils/indexHandler";
 // import { connect } from 'react-redux'
 
 class ResultPage extends PureComponent {
   render() {
     const { location, match } = this.props;
-    this.Link = this.props.match.url.substr(0, match.url.length - 5);
-    return location.state && location.state.session && location.state.term ? (
-      <div className="studentProfile_body"></div>
+    return location.state && location.state.txt1 && location.state.txt2 ? (
+      <div className="flex1 flex fd_col"></div>
     ) : (
-      <Redirect to={{ pathname: `${this.Link}` }} replace />
+      <Redirect to={{ pathname: link(match.url) }} replace />
     );
   }
 }

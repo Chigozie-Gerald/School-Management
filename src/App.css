@@ -63,6 +63,9 @@
   align-items: center;
   display: flex;
 }
+.z2 {
+  z-index: 2;
+}
 .btn_link:hover {
   opacity: 0.85 !important;
   transition: all 350ms ease;
@@ -182,6 +185,12 @@
 }
 .rel {
   position: relative;
+}
+.blindTxt {
+  color: rgb(170, 169, 169);
+  font-size: 0.85rem;
+  font-weight: 500;
+  font-style: italic;
 }
 .float_opt {
   position: absolute;

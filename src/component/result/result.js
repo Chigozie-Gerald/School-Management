@@ -3,6 +3,7 @@ import "./result.css";
 import { Route, Switch, withRouter } from "react-router-dom";
 import ResultPage from "../resultPage/resultPage";
 import NotFound from "../notFound";
+import SelectPage from "../select/selectPage";
 // import { connect } from 'react-redux'
 
 class Result extends PureComponent {
@@ -81,35 +82,35 @@ class Result extends PureComponent {
 
   render() {
     const { match } = this.props;
-    const result_session_arr = [
-      "2016/2017 Session",
-      "2017/2018 Session",
-      "2018/2019 Session",
-    ];
-    const result_session_list = result_session_arr.map((elem, n) => {
-      return (
-        <div
-          className="studentProfile_inner_session_float_inner"
-          key={n}
-          onClick={() => this.handleSession(elem)}
-        >
-          {elem}
-        </div>
-      );
-    });
+    // const result_session_arr = [
+    //   "2016/2017 Session",
+    //   "2017/2018 Session",
+    //   "2018/2019 Session",
+    // ];
+    // const result_session_list = result_session_arr.map((elem, n) => {
+    //   return (
+    //     <div
+    //       className="studentProfile_inner_session_float_inner"
+    //       key={n}
+    //       onClick={() => this.handleSession(elem)}
+    //     >
+    //       {elem}
+    //     </div>
+    //   );
+    // });
 
-    const result_term_arr = ["1st Term", "2nd Term", "3rd Term"];
-    const result_term_list = result_term_arr.map((term, n) => {
-      return (
-        <div
-          className="studentProfile_inner_session_float_inner"
-          onClick={() => this.handleTerm(term)}
-          key={n * 0.09}
-        >
-          {term}
-        </div>
-      );
-    });
+    // const result_term_arr = ["1st Term", "2nd Term", "3rd Term"];
+    // const result_term_list = result_term_arr.map((term, n) => {
+    //   return (
+    //     <div
+    //       className="studentProfile_inner_session_float_inner"
+    //       onClick={() => this.handleTerm(term)}
+    //       key={n * 0.09}
+    //     >
+    //       {term}
+    //     </div>
+    //   );
+    // });
 
     return (
       <Switch>
@@ -122,112 +123,123 @@ class Result extends PureComponent {
           exact
           path={`${match.url}`}
           render={() => (
-            <div
-              className="studentProfile_body div-width-100"
-              onClick={this.cancelAll}
-            >
-              <div className="student_profile_header">Results</div>
-              <div className="student_profile_body studentProfile_inner_body">
-                <div className="studentProfile_inner_session_div">
-                  <div
-                    className={
-                      this.state.sessionOpen
-                        ? "studentProfile_inner_session_float div1"
-                        : "noSHOW"
-                    }
-                  >
-                    <div className="studentProfile_inner_session_float_inner header">
-                      Session
-                    </div>
-                    {result_session_list}
-                  </div>
-                  <div
-                    className="studentProfile_inner_session_inner"
-                    id="result_session"
-                    onClick={this.handleClick}
-                  >
-                    <div
-                      className="studentProfile_inner_select_div"
-                      id="result_session_title"
-                    >
-                      {this.state.session === "" ? (
-                        "Select Session"
-                      ) : (
-                        <b
-                          id="result_session_title_b"
-                          onClick={this.handleClick}
-                        >
-                          {this.state.session}
-                        </b>
-                      )}
-                    </div>
-                    <div
-                      className="studentProfile_inner_select_btn_div"
-                      id="result_session_btn"
-                    >
-                      <i
-                        className="material-icons arrow_drop_down"
-                        id="result_session_icon"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-                <div className="studentProfile_inner_term_div">
-                  <div
-                    className={
-                      this.state.termOpen
-                        ? "studentProfile_inner_session_float div2"
-                        : "noSHOW"
-                    }
-                  >
-                    <div className="studentProfile_inner_session_float_inner header">
-                      Term
-                    </div>
-                    {result_term_list}
-                  </div>
-                  <div
-                    className="studentProfile_inner_session_inner"
-                    id="result_term"
-                    onClick={this.handleClick}
-                  >
-                    <div
-                      className="studentProfile_inner_select_div"
-                      id="result_term_title"
-                    >
-                      {this.state.term === "" ? (
-                        "Select Term"
-                      ) : (
-                        <b id="result_term_title_b" onClick={this.handleClick}>
-                          {this.state.term}
-                        </b>
-                      )}
-                    </div>
-                    <div
-                      className="studentProfile_inner_select_btn_div"
-                      id="result_term_btn"
-                    >
-                      <i
-                        className="material-icons arrow_drop_down"
-                        id="result_term_icon"
-                      ></i>
-                    </div>
-                  </div>
-                </div>
-                <div className="studentProfile_inner_next_div">
-                  <form method="POST" onSubmit={this.handleSubmit}>
-                    <button
-                      className="studentProfile_inner_next_btn result_btn btn_link"
-                      onClick={this.handleSubmit}
-                      disabled={
-                        !this.state.session || !this.state.term ? true : false
-                      }
-                    >
-                      View Result
-                    </button>
-                  </form>
-                </div>
-              </div>
-            </div>
+            <SelectPage
+              pathLink={`${this.props.match.url}/view`}
+              btnText="View Result"
+              txt1="Select Session"
+              list1={[
+                "2016/2017 Session",
+                "2017/2018 Session",
+                "2018/2019 Session",
+              ]}
+              txt2="Select Term"
+              list2={["1st term", "2nd Term", "3rd Term"]}
+            />
+            // <div
+            //   className="studentProfile_body div-width-100"
+            //   onClick={this.cancelAll}
+            // >
+            //   <div className="student_profile_body studentProfile_inner_body">
+            //     <div className="studentProfile_inner_session_div">
+            //       <div
+            //         className={
+            //           this.state.sessionOpen
+            //             ? "studentProfile_inner_session_float div1"
+            //             : "noSHOW"
+            //         }
+            //       >
+            //         <div className="studentProfile_inner_session_float_inner header">
+            //           Session
+            //         </div>
+            //         {result_session_list}
+            //       </div>
+            //       <div
+            //         className="studentProfile_inner_session_inner"
+            //         id="result_session"
+            //         onClick={this.handleClick}
+            //       >
+            //         <div
+            //           className="studentProfile_inner_select_div"
+            //           id="result_session_title"
+            //         >
+            //           {this.state.session === "" ? (
+            //             "Select Session"
+            //           ) : (
+            //             <b
+            //               id="result_session_title_b"
+            //               onClick={this.handleClick}
+            //             >
+            //               {this.state.session}
+            //             </b>
+            //           )}
+            //         </div>
+            //         <div
+            //           className="studentProfile_inner_select_btn_div"
+            //           id="result_session_btn"
+            //         >
+            //           <i
+            //             className="material-icons arrow_drop_down"
+            //             id="result_session_icon"
+            //           ></i>
+            //         </div>
+            //       </div>
+            //     </div>
+            //     <div className="studentProfile_inner_term_div">
+            //       <div
+            //         className={
+            //           this.state.termOpen
+            //             ? "studentProfile_inner_session_float div2"
+            //             : "noSHOW"
+            //         }
+            //       >
+            //         <div className="studentProfile_inner_session_float_inner header">
+            //           Term
+            //         </div>
+            //         {result_term_list}
+            //       </div>
+            //       <div
+            //         className="studentProfile_inner_session_inner"
+            //         id="result_term"
+            //         onClick={this.handleClick}
+            //       >
+            //         <div
+            //           className="studentProfile_inner_select_div"
+            //           id="result_term_title"
+            //         >
+            //           {this.state.term === "" ? (
+            //             "Select Term"
+            //           ) : (
+            //             <b id="result_term_title_b" onClick={this.handleClick}>
+            //               {this.state.term}
+            //             </b>
+            //           )}
+            //         </div>
+            //         <div
+            //           className="studentProfile_inner_select_btn_div"
+            //           id="result_term_btn"
+            //         >
+            //           <i
+            //             className="material-icons arrow_drop_down"
+            //             id="result_term_icon"
+            //           ></i>
+            //         </div>
+            //       </div>
+            //     </div>
+            //     <div className="studentProfile_inner_next_div">
+            //       <form method="POST" onSubmit={this.handleSubmit}>
+            //         <button
+            //           className="studentProfile_inner_next_btn result_btn btn_link"
+            //           onClick={this.handleSubmit}
+            //           disabled={
+            //             !this.state.session || !this.state.term ? true : false
+            //           }
+            //         >
+            //           View Result
+            //         </button>
+            //       </form>
+            //     </div>
+            //   </div>
+            // </div>
           )}
         />
         <Route

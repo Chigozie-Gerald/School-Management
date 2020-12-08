@@ -14,7 +14,6 @@ import StudentDetails from "../studentDetails/studentDetails";
 import StudentFees from "../studentFees/studentFees";
 import PaymentPage from "../paymentPage/paymentPage";
 import StudentReceipt from "../studentReceipt/studentReceipt";
-import Account from "../account/account";
 import LittleFooter from "../littleFooter";
 // import { connect } from 'react-redux'
 
@@ -121,7 +120,6 @@ class StudentProfile extends PureComponent {
         link: `${match.url}/lob`,
         render: LOB,
       },
-      { return: false, link: `${match.url}/account`, render: Account },
       { return: false, link: `${match.url}/payment`, render: PaymentPage },
       { return: false, link: `${match.url}/receipt`, render: StudentReceipt },
     ];

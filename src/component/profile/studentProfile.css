@@ -37,6 +37,9 @@
   border: 1px solid #ddd;
   position: relative;
 }
+.studentProfile_inner_session_div {
+  margin-top: 0;
+}
 .studentProfile_inner_term_div {
   margin: 1.5rem 0 2.5rem 0;
 }
