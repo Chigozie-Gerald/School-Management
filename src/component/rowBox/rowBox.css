@@ -1,10 +1,10 @@
 .rowBox {
   padding: 0.5rem 1rem;
   background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #eee;
 }
 .rowBox:last-child {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #eee;
   border-top: none;
 }
 .rowBox_title_head {

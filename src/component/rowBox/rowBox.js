@@ -10,7 +10,7 @@ class RowBox extends PureComponent {
       <div
         className="rowBox div-width-100 tll"
         style={{
-          padding: this.props.padding ? `${this.props.padding}` : NaN,
+          padding: this.props.padding ? `${this.props.padding}` : "NaN",
         }}
       >
         <Link className="Link" to={{ pathname: link ? link : match.url }}>

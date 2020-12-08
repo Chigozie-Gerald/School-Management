@@ -1,8 +1,8 @@
 .studentFees_wrapper {
-  width: 100%;
-  min-height: calc(var(--vvh, 1vh) * 100 - 9.5rem);
-  height: auto;
-  background-color: #fff;
+  font-size: 0.85rem;
+}
+.studentFees_hist {
+  margin-bottom: 1rem;
 }
 .studentFees_body_inner_title_head {
   min-height: 2.5rem;
@@ -12,97 +12,72 @@
   justify-content: flex-start;
   font-weight: 500;
 }
-.studentFees_body_inner_title_btn_div {
-  min-height: 1.5rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-bottom: 0.75rem;
-}
-.studentFees_body_inner_title_btn {
-  min-height: 1.5rem;
-  padding: 0 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffc107;
-  background-color: rgba(255, 176, 7, 0.5);
-}
-.studentFees_body_inner_title_btn.green {
-  background-color: rgba(59, 206, 66, 0.65);
-}
-.studentFees_body_div_mrg {
-  height: 1.35rem;
-  width: 100%;
-  background-color: #eee;
+.studentFees_body {
+  padding: 1.5rem 0;
+  margin-top: 1.5rem;
+  border-top: 1px solid #eee;
 }
 .studentFees_body_div {
-  width: 100%;
-  min-height: 3.5rem;
-  height: auto;
-  padding: 0 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  font-weight: 500;
   margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 0.9rem;
 }
-.studentFees_body_wrapper {
-  padding: 0 0.5rem;
-  width: 100%;
+.studentFees_body_pane_box {
+  padding-right: 1.5rem;
 }
 .studentFees_body_wrapper_inner {
-  padding: 0.5rem;
-  width: 100%;
-  border-radius: 0.15rem;
   margin-bottom: 2rem;
-  border: 1px solid #ddd;
 }
 .studentFees_body_wrapper_inner:last-child {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
-.studentFees_body_wrapper_pane {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
-  text-align: left;
+.studentFees_body_pane_img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.35rem;
+  background-color: #ddd;
 }
-.studentFees_body_wrapper_pane.div1 {
-  min-height: 3rem;
-  padding-bottom: 0.25rem;
-  border-bottom: 1px solid #ddd;
-  font-weight: 600;
-  align-items: flex-start;
-}
-.studentFees_body_wrapper_pane.div2 {
-  min-height: 1.5rem;
-}
-.studentFees_body_wrapper_pane.div2 p {
-  margin: 0;
-  width: 100%;
-  display: block;
-  font-size: 0.9rem;
-  text-align: left;
-}
-.studentFees_body_wrapper_pane.div2 p b {
-  min-height: 1.5rem;
+.studentFees_body_pane.div1 {
+  padding: 0.25rem 0;
+  font-size: 1rem;
   font-weight: 500;
 }
-.studentFees_body_wrapper_pane.div3 {
-  min-height: 3rem;
-  padding-top: 0.25rem;
+.studentFees_body_pane.div2 {
+  padding: 0.25rem 0;
 }
-.studentFees_body_wrapper_pane_btn {
+.studentFees_body_pane.div2 p {
+  margin: 0;
   width: 100%;
-  min-height: 2.75rem;
+  padding-bottom: 0.15rem;
+  font-size: 0.8rem;
+  text-align: left;
+}
+.studentFees_body_pane.div2 p:last-child {
+  margin-bottom: 0.75rem;
+}
+.studentFees_body_pane.div2 span {
+  color: var(--pantone);
+  font-weight: 500;
+}
+.studentProfile_btn.header {
+  padding: 0.5rem 0.5rem;
   border-radius: 0.15rem;
-  background-color: rgb(54, 79, 105);
-  /* background-color: #792828; */
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: rgba(0, 123, 255, 0.25);
+  font-weight: 450;
+  color: var(--pantone);
+}
+.studentFees_comp_icon {
+  padding-right: 1rem;
+  color: var(--pantone);
+}
+.studentFees_comp_det {
+  font-size: 1rem;
+}
+.studentFees_comp_info {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--orange);
+}
+.studentFees_comp i {
+  color: var(--pantone);
 }

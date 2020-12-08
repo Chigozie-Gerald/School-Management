@@ -12,19 +12,17 @@ class PaymentPage extends PureComponent {
       this.type = null;
     }
     return (
-      <div className="studentProfile_body">
-        <div className="studentProfile_inner_wrapper flex fd_col">
-          <div className="paymentHistory_header flex ver_align">
-            {this.type && (
-              <span>
-                {this.type}
-                <i className="material-icons keyboard_arrow_right center"></i>
-              </span>
-            )}
-            <b>Payment</b>
-          </div>
-          <div className="student_profile_header">Select a Payment Option</div>
+      <div className="flex1 pr1 pl1 flex fd_col">
+        <div className="paymentHistory_header flex ver_align">
+          {this.type && (
+            <span>
+              {this.type}
+              <i className="material-icons keyboard_arrow_right center"></i>
+            </span>
+          )}
+          <b>Payment</b>
         </div>
+        <div className="student_profile_header">Select a Payment Option</div>
       </div>
     );
   }

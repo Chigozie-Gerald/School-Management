@@ -4,12 +4,8 @@
   background-color: #fff;
 }
 .paymentHistory_header {
-  min-height: 2rem;
-  width: 100%;
-  padding-left: 1rem;
   color: #777;
-  font-size: 0.85rem;
-  border-bottom: 1px solid #ddd;
+  font-size: 0.8rem;
 }
 .paymentHistory_header i {
   font-size: 1.25rem !important;

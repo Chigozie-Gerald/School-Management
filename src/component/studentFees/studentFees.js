@@ -4,7 +4,7 @@ import { Link, Switch, Route } from "react-router-dom";
 import PaymentHistory from "../paymentHistory/paymentHistory";
 import CompulsoryFee from "../compulsoryFee/compulsoryFee";
 import NotFound from "../notFound";
-import RowBox from "../rowBox/rowBox";
+// import RowBox from "../rowBox/rowBox";
 // import { connect } from 'react-redux'
 
 class StudentFees extends PureComponent {
@@ -25,26 +25,33 @@ class StudentFees extends PureComponent {
     ];
     const student_fees_list = student_fees_arr.map((elem, n) => {
       return (
-        <div className="studentFees_body_wrapper_inner" key={n}>
-          <div className="studentFees_body_wrapper_pane div1">{elem.title}</div>
-          <div className="studentFees_body_wrapper_pane div2">
-            <p>
-              <b>Amount:</b> N{elem.amount}
-            </p>
-          </div>
-          <div className="studentFees_body_wrapper_pane div3">
-            <div className="studentFees_body_wrapper_pane_btn btn_link">
-              <Link
-                className="Link"
-                to={{
-                  pathname: `${this.historyLink}payment`,
-                  state: { type: `${elem.type}` },
-                }}
-              >
-                Pay Now!
-              </Link>
+        <div
+          className="studentFees_body_wrapper_inner box_border p1 flex div-width-100"
+          key={n}
+        >
+          <div className="div-width-100 studentFees_body_pane_box flex1">
+            <div className="studentFees_body_pane flex1 div1">{elem.title}</div>
+            <div className="studentFees_body_pane flex1 div2">
+              <p>
+                Amount:{" "}
+                <b>
+                  <span>N{elem.amount}</span>
+                </b>
+              </p>
             </div>
+            <Link
+              className="flex1"
+              to={{
+                pathname: `${this.historyLink}payment`,
+                state: { type: `${elem.type}` },
+              }}
+            >
+              <div className="studentProfile_btn div-width-100 center btn_link">
+                Pay Now!
+              </div>
+            </Link>
           </div>
+          <div className="studentFees_body_pane_img"></div>
         </div>
       );
     });
@@ -62,28 +69,42 @@ class StudentFees extends PureComponent {
           exact
           path={`${match.url}`}
           render={() => (
-            <div className="studentProfile_body flex fd_col pt1">
-              <div className="student_profile_history_wrapper">
-                <div className="student_profile_history_wrapper_btn btn_link">
+            <div className="tll studentFees_wrapper flex1 div-width-100 flex fd_col pr1 pl1">
+              <div className="studentFees_hist">
+                <div className="studentProfile_btn header btn_link div-width-100">
                   <Link
                     className="Link"
                     to={{ pathname: `${match.url}/history` }}
                   >
-                    View Your Payment History
+                    View Your Payment History{" "}
                   </Link>
                 </div>
               </div>
-              <div className="studentFees_body_div_mrg"></div>
-              <div className="student_profile_body no_side_padding pt0">
-                <RowBox
-                  title="Compulsory Fees"
-                  link={`${match.url}/compulsory`}
-                  info="Pending (5)"
-                />
-                <div className="studentFees_body_div_mrg"></div>
-                <div className="studentFees_body_div">Non-Compulsory Fees</div>
-                <div className="studentFees_body_wrapper">
-                  {student_fees_list}
+              <div className="flex1 pt0">
+                <div className="studentFees_comp div-width-100 box_border p1 flex">
+                  <Link
+                    className="Link"
+                    to={{ pathname: `${match.url}/compulsory` }}
+                  >
+                    <div className="studentFees_comp_icon center">
+                      <i className="material-icons account_balance_wallet"></i>
+                    </div>
+                    <div className="studentFees_comp_title flex1">
+                      <div className="studentFees_comp_det">
+                        Compulsory Fees
+                      </div>
+                      <div className="studentFees_comp_info">Pending (5)</div>
+                    </div>
+                    <i className="material-icons keyboard_arrow_right keyboard_arrow"></i>
+                  </Link>
+                </div>
+                <div className="studentFees_body">
+                  <div className="studentFees_body_div div-width-100">
+                    Non-Compulsory Fees
+                  </div>
+                  <div className="studentFees_body_wrapper div-width-100">
+                    {student_fees_list}
+                  </div>
                 </div>
               </div>
             </div>

@@ -4,7 +4,7 @@ import TopHeader from "../topHeader";
 import { handleOpen, openHandlerDefault } from "../utils/openHandler";
 import { Link, Switch, Route } from "react-router-dom";
 import NotFound from "../notFound";
-import Class from "../staff/class/class";
+import LOB from "../staff/listOfBooks/listOfBooks";
 import StudentYearBook from "../studentYearBook/studentYearBook";
 import StudentGallery from "../studentGallery/studentGallery";
 import Result from "../result/result";
@@ -119,7 +119,7 @@ class StudentProfile extends PureComponent {
         name: "List of Books",
         strict: false,
         link: `${match.url}/lob`,
-        render: Class,
+        render: LOB,
       },
       { return: false, link: `${match.url}/account`, render: Account },
       { return: false, link: `${match.url}/payment`, render: PaymentPage },
@@ -206,7 +206,7 @@ class StudentProfile extends PureComponent {
           handlemakeRightFooterShadow={this.handlemakeRightFooterShadow}
         />
 
-        <div className="studentProfile_body">
+        <div className="studentProfile_body flex fd_col">
           <Switch>
             {LinkRoutes}
             <Route

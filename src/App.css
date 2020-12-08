@@ -499,7 +499,6 @@
 /* Side ends */
 
 .blue_link:hover {
-  transition: all 2000ms ease;
   background-color: rgba(0, 123, 255, 0.3);
 }
 .my_input_submit {

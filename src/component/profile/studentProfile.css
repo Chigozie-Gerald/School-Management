@@ -4,16 +4,17 @@
   height: auto;
   background-color: #fff;
 }
+.studentProfile_btn {
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.15rem;
+  background-color: rgb(54, 79, 105);
+  background-color: var(--pantone);
+  color: #fff;
+}
 .studentProfile_body {
   width: 100%;
   font-size: 0.85rem;
   min-height: calc(var(--vvh, 1vh) * 100 - 3.5rem);
-  height: auto;
-  background-color: #fff;
-}
-.studentProfile_inner_wrapper {
-  width: 100%;
-  min-height: calc(var(--vvh, 1vh) * 100 - 9.5rem);
   height: auto;
   background-color: #fff;
 }
@@ -168,14 +169,15 @@
 }
 /* From App.css */
 .student_profile_header {
-  height: 3.5rem;
+  height: 3rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   text-align: left;
   padding: 0 1rem;
-  font-size: 1.2rem;
+  padding-left: 0;
+  font-size: 1rem;
   font-weight: 500;
   overflow: hidden;
   text-overflow: ellipsis;
