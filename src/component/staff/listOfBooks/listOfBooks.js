@@ -3,6 +3,7 @@ import "./listOfBooks.css";
 import { Link, Switch, Route } from "react-router-dom";
 import NotFound from "../../notFound";
 import Select from "../../select/select";
+import SelectPage from "../../select/selectPage";
 // import { connect } from 'react-redux'
 
 class ListOfBooks extends PureComponent {
@@ -66,8 +67,24 @@ class ListOfBooks extends PureComponent {
           exact
           path={match.url}
           render={() => (
-            <div className="assCreatePane rel profile_min_height flex1 flex fd_col div1 div-width-100">
-              <Select />
+            <div className="tll div-width-100 flex fd_col flex1">
+              <span className="select_out_header">List of Books</span>
+              <SelectPage
+                pathLink={this.props.match.url + "/list"}
+                btnText=""
+                txt1="Select Session"
+                list1={[
+                  "2014/2015 Session",
+                  "2015/2016 Session",
+                  "2016/2017 Session",
+                  "2017/2018 Session",
+                  "2018/2019 Session",
+                ]}
+                txt2="Select Class"
+                list2={["JSS1", "JSS2", "JSS3", "SS1", "SS2", "SS3"]}
+              />
+            </div>
+            /* <Select />
               <Select />
               <div className="assCreate_btn_wrapper flex1 flex horiz_align">
                 <div className="assCreate_btn div1 center inline_flex div-width-100">
@@ -78,8 +95,7 @@ class ListOfBooks extends PureComponent {
                     Next
                   </Link>
                 </div>
-              </div>
-            </div>
+              </div> */
           )}
         />
         <Route

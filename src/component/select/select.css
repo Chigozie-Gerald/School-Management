@@ -59,12 +59,14 @@
   position: absolute;
   padding: 0.5rem 0;
   padding-bottom: 1rem;
+  padding-top: 0;
   top: -0.25rem;
   left: -1px;
   /* min-width: calc(var(--vvw, 1vw) * 30); */
   width: 50%;
   max-width: 15rem;
-  max-height: 19rem;
+  overflow-x: hidden;
+  overflow-y: auto;
   z-index: 9;
   background-color: #fff;
   border-radius: 0.35rem;
@@ -74,9 +76,17 @@
   animation-duration: 200ms;
   animation-fill-mode: both;
 }
+.selectShadow {
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.select_float_body {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 16rem;
+}
 .select_float_inner {
   width: 100%;
-  min-height: 3rem;
+  min-height: 2.75rem;
   text-align: left;
   display: flex;
   align-items: center;
@@ -92,8 +102,10 @@
 }
 .select_float_inner.header {
   border-bottom: 1px solid #eee;
+  min-height: 3rem;
   color: #666;
   font-weight: 500;
+  transition: all 350ms ease;
 }
 .select_float_inner.header:hover {
   background-color: transparent;

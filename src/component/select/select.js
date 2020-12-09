@@ -7,11 +7,17 @@ class Select extends PureComponent {
     this.state = {
       open: false,
       txt: "",
+      shadow: false,
     };
   }
   handleOpen = () => {
     this.setState({
       open: !this.state.open,
+    });
+  };
+  handleShadow = (data) => {
+    this.setState({
+      shadow: data ? true : false,
     });
   };
   render() {
@@ -52,8 +58,26 @@ class Select extends PureComponent {
             className={`select_float flex fd_col 
         ${this.state.open ? "" : "noSHOW"}`}
           >
-            <div className="select_float_inner header">{txt}</div>
-            {timetable_session_list}
+            <div
+              className={`select_float_inner header ${
+                this.state.shadow ? "selectShadow" : "noSHADOW"
+              }`}
+            >
+              {txt}
+            </div>
+            <div
+              ref={(node) => (this.selectList = node)}
+              onScroll={() => {
+                if (this.selectList.scrollTop > 2) {
+                  this.handleShadow(true);
+                } else {
+                  this.handleShadow(false);
+                }
+              }}
+              className="select_float_body div-width-100"
+            >
+              {timetable_session_list}
+            </div>
           </div>
           {/* List ends */}
 
