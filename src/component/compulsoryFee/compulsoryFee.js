@@ -8,9 +8,9 @@ class CompulsoryFee extends PureComponent {
     const { match } = this.props;
     this.historyLink = match.url.substr(0, match.url.length - 10);
     return (
-      <div className="studentProfile_body flex fd_col">
+      <div className="flex1 flex fd_col">
         <div className="compulsoryFee_wrapper_top">
-          {2 * 2 < 5 ? (
+          {2 * 2 < 3 ? (
             <div className="compulsoryFee_wrapper_top_img_div">
               You have no Pending Fees
             </div>

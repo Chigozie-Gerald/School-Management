@@ -22,3 +22,35 @@
   background-color: #fff;
   padding: 1rem 0;
 }
+.paymentHistory_body_tny {
+  color: var(--lteColor);
+  font-size: 0.75rem;
+}
+.paymentHistory_body_tny span {
+  color: var(--orange);
+}
+.paymentHistory_inner p {
+  margin: 0;
+  padding: 0.05rem 0;
+}
+.paymentHistory_inner {
+  margin: 0.75rem 0;
+  background-color: var(--lteBacColor);
+  background-color: rgba(248, 248, 248);
+  border-radius: 0.15rem;
+  margin-bottom: 1rem;
+}
+.paymentHistory_inner p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #888;
+  padding: 0.05rem 0;
+}
+.paymentHistory_inner span {
+  color: var(--pantone);
+  font-weight: 500;
+}
+.paymentHistory_inner.div2 span.dur {
+  font-weight: 400;
+  color: #343a40;
+}

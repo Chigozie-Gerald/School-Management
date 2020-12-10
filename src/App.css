@@ -23,6 +23,9 @@
 .p1 {
   padding: 1rem;
 }
+.p0-5 {
+  padding: 0.5rem;
+}
 .pt0 {
   padding-top: 0 !important;
 }

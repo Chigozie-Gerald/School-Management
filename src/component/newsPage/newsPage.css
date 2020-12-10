@@ -43,6 +43,7 @@
 .newsPage_body {
   border-top: 1px solid #ddd;
   padding-bottom: 2rem;
+  font-size: 0.9rem;
 }
 .newsPage_footer {
   min-height: 3rem;

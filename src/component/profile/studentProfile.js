@@ -91,6 +91,12 @@ class StudentProfile extends PureComponent {
         render: StudentFees,
       },
       {
+        name: "Uniform",
+        strict: false,
+        link: `${match.url}/uniform`,
+        render: StudentYearBook,
+      },
+      {
         name: "Timetable",
         strict: false,
         link: `${match.url}/timetable`,
@@ -108,12 +114,7 @@ class StudentProfile extends PureComponent {
         link: `${match.url}/gallery`,
         render: StudentGallery,
       },
-      {
-        name: "Year Book",
-        strict: false,
-        link: `${match.url}/yearbook`,
-        render: StudentYearBook,
-      },
+
       {
         name: "List of Books",
         strict: false,

@@ -4,7 +4,9 @@ import "./studentYearBook.css";
 
 class StudentYearBook extends PureComponent {
   render() {
-    return <div className="studentYearBook_wrapper"></div>;
+    return (
+      <div className="studentYearBook_wrapper div-width-100 flex fd_col flex1"></div>
+    );
   }
 }
 

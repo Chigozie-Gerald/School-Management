@@ -18,12 +18,18 @@ class PaymentHistory extends PureComponent {
             <div className="studentFees_body_pane flex1 div1">
               2nd School Fees 2018/2019 Session
             </div>
-            <div className="studentFees_body_pane div2">
-              <p>
+            <div className="paymentHistory_body_tny flex1 div1">
+              Paid via <span>Remita</span>
+            </div>
+            <div className="paymentHistory_inner div2 p0-5">
+              <p className="top">
                 Amount: <span>N25,000</span>
               </p>
               <p>
-                Paid on: <span>4th August, 2018</span>
+                Paid on: <span className="dur">4th August, 2018</span>
+              </p>
+              <p>
+                Time: <span className="dur">4:45pm</span>
               </p>
             </div>
             <div className="studentProfile_btn btn_link">

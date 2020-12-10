@@ -232,7 +232,7 @@ class StaffProfile extends PureComponent {
           linkList={linkList}
           handlemakeRightFooterShadow={this.handlemakeRightFooterShadow}
         />
-        <div className="studentProfile_body">
+        <div className="studentProfile_body flex fd_col">
           <Switch>
             {LinkRoutes}
             <Route

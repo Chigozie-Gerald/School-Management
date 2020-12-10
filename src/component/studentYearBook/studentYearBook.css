@@ -1,6 +1,3 @@
 .studentYearBook_wrapper {
-  width: 100%;
-  min-height: calc(var(--vvh, 1vh) * 100 - 6.5rem);
-  height: auto;
   background-color: var(--green);
 }

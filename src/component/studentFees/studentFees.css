@@ -19,7 +19,6 @@
 }
 .studentFees_body_div {
   margin-bottom: 1rem;
-  font-weight: 500;
   font-size: 0.9rem;
 }
 .studentFees_body_pane_box {
@@ -39,8 +38,8 @@
 }
 .studentFees_body_pane.div1 {
   padding: 0.25rem 0;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 0.95rem;
+  font-weight: 400;
 }
 .studentFees_body_pane.div2 {
   padding: 0.25rem 0;
@@ -53,12 +52,13 @@
   text-align: left;
 }
 .studentFees_body_pane.div2 p:last-child {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 .studentFees_body_pane.div2 span {
   color: var(--pantone);
   font-weight: 500;
 }
+
 .studentProfile_btn.header {
   padding: 0.5rem 0.5rem;
   border-radius: 0.15rem;

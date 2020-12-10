@@ -100,7 +100,7 @@ class StudentFees extends PureComponent {
                 </div>
                 <div className="studentFees_body">
                   <div className="studentFees_body_div div-width-100">
-                    Non-Compulsory Fees
+                    Non Compulsory Fees
                   </div>
                   <div className="studentFees_body_wrapper div-width-100">
                     {student_fees_list}
