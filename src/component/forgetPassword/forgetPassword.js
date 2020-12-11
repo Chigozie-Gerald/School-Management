@@ -85,7 +85,7 @@ class ForgetPassword extends PureComponent {
             {this.state.error && "Incorrect Email"}
           </div>
 
-          <div className="rel center">
+          <div className="rel tll">
             <div
               className="forgotten_btn center inline_flex"
               onClick={this.handleSubmit}

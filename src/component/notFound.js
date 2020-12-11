@@ -16,7 +16,7 @@ class NotFound extends PureComponent {
         style={{
           height: height,
           flex: "1",
-          backgroundColor: "var(--lteBacColor)",
+          backgroundColor: this.props.BC || "var(--lteBacColor)",
         }}
       >
         <div>
