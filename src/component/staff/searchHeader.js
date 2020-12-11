@@ -31,7 +31,7 @@ class SearchHeader extends PureComponent {
         </div>
         <div
           style={{ visibility: isOpen ? "hidden" : "visible" }}
-          className="lowHeader_wrapper_icon_div search"
+          className="lowHeader_wrapper_icon_div smFlex search"
         >
           <i
             onClick={handleOpen}

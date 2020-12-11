@@ -228,7 +228,7 @@ export const LoginForm = withRouter(
       return (
         <div className="div-width-100">
           <div className="loginBody_top_title div-width-100 flex vert_align flex_left">
-            Please Login
+            PLEASE LOGIN
           </div>
           <div className="loginBody_body div-width-100">
             <form

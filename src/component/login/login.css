@@ -126,6 +126,8 @@
 .loginBody_input_div {
   --height: 2.25rem;
   --bottom: 1rem;
+  font-size: 0.85rem;
+  font-weight: 400;
   padding: 1rem;
   padding-bottom: var(--bottom);
   margin-top: 0.5rem;
@@ -183,7 +185,8 @@
 }
 .loginBody_top_title {
   padding: 0 1rem;
-  font-size: 0.75rem;
+  font-weight: 500;
+  font-size: 0.7rem;
 }
 .loginBody_submit {
   padding: 0;
@@ -193,7 +196,7 @@
 }
 .input_error_div {
   position: absolute;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   bottom: 0;
   height: 1.15rem;
   width: calc(100% - 2rem);
@@ -253,8 +256,8 @@
     background-color: #fff;
     border-radius: 0.35rem;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
-    max-width: 35rem;
-    width: 80%;
+    max-width: 20rem;
+    width: 85%;
     margin: 0 auto;
   }
 }

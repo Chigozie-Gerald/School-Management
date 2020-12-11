@@ -939,7 +939,26 @@
     display: flex;
   }
   .smFlex {
-    display: none;
+    display: none !important;
+  }
+  .mainSide_right_header {
+    height: 3.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .mainSide_right_header_title_div > div {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .mainSide_right_header_title_div .div1 {
+    height: 1.5rem;
+  }
+  .mainSide_right_header_title_div .div2 {
+    height: 1rem;
+  }
+  .mainSide_right_body {
+    border-left: 1px solid #eee;
   }
 }
 @media (min-width: 992px) {

@@ -7,7 +7,7 @@ export class LowHeader extends PureComponent {
     const { handleOpen, isOpen } = this.props;
     return (
       <div className="lowHeader_wrapper">
-        <div className="lowHeader_wrapper_icon_div" onClick={handleOpen}>
+        <div className="lowHeader_wrapper_icon_div smFlex" onClick={handleOpen}>
           {!isOpen ? (
             <i className="material-icons menu lowHeader_wrapper_icon"></i>
           ) : (

@@ -36,3 +36,17 @@
 .lowHeader_wrapper_icon_div.search {
   padding: 0.5rem 1.5rem;
 }
+.page_wrapper_right {
+  width: 20rem;
+  color: #fff;
+  background-color: var(--lteBacColor);
+}
+.page_wrapper_right .inner {
+  width: 20rem;
+  top: 0;
+  right: 0;
+  position: fixed;
+  overflow-y: auto;
+  height: 100vh;
+  color: #fff;
+}

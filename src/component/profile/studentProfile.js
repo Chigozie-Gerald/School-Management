@@ -176,7 +176,7 @@ class StudentProfile extends PureComponent {
             </div>
             <div
               style={{ visibility: this.state.menu ? "hidden" : "visible" }}
-              className="lowHeader_wrapper_icon_div profile box_border center"
+              className="lowHeader_wrapper_icon_div smFlex profile box_border center"
             >
               <i
                 onClick={this.handleOpen}
@@ -246,18 +246,19 @@ export class MainSideRight extends PureComponent {
       status,
       handlemakeRightShadow,
       linkList,
+      md,
       handlemakeRightFooterShadow,
     } = this.props;
     return (
       <div className={`main_header_side_right ${menu ? " active" : ""}`}>
         <div
-          className={menu ? "main_header_side_float" : "noSHOW"}
+          className={menu ? "main_header_side_float smFlex" : "noSHOW"}
           onClick={handleOpen}
         ></div>
-        <div className="mainSide_wrapper rel">
+        <div className={`mainSide_wrapper rel`}>
           <div
             onClick={handleOpen}
-            className="mainSide_wrapper_close_icon rad_50 center"
+            className="mainSide_wrapper_close_icon rad_50 center smFlex"
           >
             <i className="material-icons close"></i>
           </div>

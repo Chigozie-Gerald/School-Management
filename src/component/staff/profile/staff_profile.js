@@ -161,92 +161,115 @@ class StaffProfile extends PureComponent {
       />
     ));
     return (
-      <div className="page_wrapper">
-        {location.pathname === `${match.url}` ? (
-          <div
-            className={`studentProfile_header flex ${
-              this.state.makeShadow ? "" : "noSHADOW"
-            }`}
-          >
+      <div className="page_wrapper flex">
+        <div className="page_wrapper_left"></div>
+        <div className="page_wrapper_middle flex1">
+          {location.pathname === `${match.url}` ? (
             <div
-              className="studentProfile_header_inner div1 center"
-              onClick={() => history.goBack()}
+              className={`studentProfile_header flex ${
+                this.state.makeShadow ? "" : "noSHADOW"
+              }`}
             >
-              <i className="material-icons arrow_back arrow_back_icosn studentProfile_header_icon"></i>
+              <div
+                className="studentProfile_header_inner div1 center"
+                onClick={() => history.goBack()}
+              >
+                <i className="material-icons arrow_back arrow_back_icosn studentProfile_header_icon"></i>
+              </div>
+              <div className="studentProfile_header_inner div2 vert_align flex flex1 tll">
+                <span className="div-width-100 ellipsis">Staff Profile</span>
+              </div>
+              <div
+                style={{ visibility: this.state.menu ? "hidden" : "visible" }}
+                className="lowHeader_wrapper_icon_div profile box_border center smFlex"
+              >
+                <i
+                  onClick={this.handleOpen}
+                  className="material-icons menu lowHeader_wrapper_icon"
+                ></i>
+              </div>
             </div>
-            <div className="studentProfile_header_inner div2 vert_align flex flex1 tll">
-              <span className="div-width-100 ellipsis">Staff Profile</span>
-            </div>
-            <div
-              style={{ visibility: this.state.menu ? "hidden" : "visible" }}
-              className="lowHeader_wrapper_icon_div profile box_border center"
-            >
-              <i
-                onClick={this.handleOpen}
-                className="material-icons menu lowHeader_wrapper_icon"
-              ></i>
-            </div>
-          </div>
-        ) : this.props.location.pathname === this.props.match.url + "/class" ? (
-          <SearchHeader
-            handleOpen={this.handleOpen}
-            isOpen={this.state.menu}
-            handleChange={this.handleChange}
-            cancelSearch={this.cancelSearch}
-            value={this.state.classSearch}
-            name="classSearch"
-            color="var(--pantone)"
-            placeholder="Search for Class"
-            makeShadow={this.state.makeShadow}
-          />
-        ) : this.props.location.pathname === this.props.match.url + "/staff" ? (
-          <SearchHeader
-            handleOpen={this.handleOpen}
-            isOpen={this.state.menu}
-            handleChange={this.handleChange}
-            cancelSearch={this.cancelSearch}
-            name="staffSearch"
-            value={this.state.staffSearch}
-            color="var(--pantone)"
-            placeholder="Search for Staff"
-            makeShadow={this.state.makeShadow}
-          />
-        ) : (
-          <TopHeader
-            image="./social.jpg"
-            title="Dr. Nwokoye Tochukwu"
-            subTitle="Form Teacher: JSS3A"
-            isOpen={this.state.menu}
-            handleOpen={this.handleOpen}
-          />
-        )}
-        <MainSideRight
-          menu={this.state.menu}
-          handleOpen={this.handleOpen}
-          makeRightShadow={this.state.makeRightShadow}
-          makeRightFooterShadow={this.state.makeRightFooterShadow}
-          name="Dr. Nwokoye Tochukwu"
-          status="Form Teacher: JSS3A"
-          isOpen={this.state.menu}
-          handlemakeRightShadow={this.handlemakeRightShadow}
-          linkList={linkList}
-          handlemakeRightFooterShadow={this.handlemakeRightFooterShadow}
-        />
-        <div className="studentProfile_body flex fd_col">
-          <Switch>
-            {LinkRoutes}
-            <Route
-              exact
-              render={(props) => (
-                <NotFound
-                  {...props}
-                  height="calc(var(--vvh, 1vh) * 100 - 9.5rem)"
-                />
-              )}
+          ) : this.props.location.pathname ===
+            this.props.match.url + "/class" ? (
+            <SearchHeader
+              handleOpen={this.handleOpen}
+              isOpen={this.state.menu}
+              handleChange={this.handleChange}
+              cancelSearch={this.cancelSearch}
+              value={this.state.classSearch}
+              name="classSearch"
+              color="var(--pantone)"
+              placeholder="Search for Class"
+              makeShadow={this.state.makeShadow}
             />
-          </Switch>
-          <LittleFooter />
+          ) : this.props.location.pathname ===
+            this.props.match.url + "/staff" ? (
+            <SearchHeader
+              handleOpen={this.handleOpen}
+              isOpen={this.state.menu}
+              handleChange={this.handleChange}
+              cancelSearch={this.cancelSearch}
+              name="staffSearch"
+              value={this.state.staffSearch}
+              color="var(--pantone)"
+              placeholder="Search for Staff"
+              makeShadow={this.state.makeShadow}
+            />
+          ) : (
+            <TopHeader
+              image="./social.jpg"
+              title="Dr. Nwokoye Tochukwu"
+              subTitle="Form Teacher: JSS3A"
+              isOpen={this.state.menu}
+              handleOpen={this.handleOpen}
+            />
+          )}
+          <MainSideRight
+            menu={this.state.menu}
+            handleOpen={this.handleOpen}
+            makeRightShadow={this.state.makeRightShadow}
+            makeRightFooterShadow={this.state.makeRightFooterShadow}
+            name="Dr. Nwokoye Tochukwu"
+            status="Form Teacher: JSS3A"
+            isOpen={this.state.menu}
+            handlemakeRightShadow={this.handlemakeRightShadow}
+            linkList={linkList}
+            handlemakeRightFooterShadow={this.handlemakeRightFooterShadow}
+          />
+          <div className="studentProfile_body flex fd_col">
+            <Switch>
+              {LinkRoutes}
+              <Route
+                exact
+                render={(props) => (
+                  <NotFound
+                    {...props}
+                    height="calc(var(--vvh, 1vh) * 100 - 9.5rem)"
+                  />
+                )}
+              />
+            </Switch>
+            <LittleFooter />
+          </div>
         </div>
+        <div className="page_wrapper_right">
+          <div className="inner hide">
+            <MainSideRight
+              menu={true}
+              noSHADOW={true}
+              handleOpen={this.handleOpen}
+              makeRightShadow={this.state.makeRightShadow}
+              makeRightFooterShadow={this.state.makeRightFooterShadow}
+              name="Dr. Nwokoye Tochukwu"
+              status="Form Teacher: JSS3A"
+              isOpen={this.state.menu}
+              handlemakeRightShadow={this.handlemakeRightShadow}
+              linkList={linkList}
+              handlemakeRightFooterShadow={this.handlemakeRightFooterShadow}
+            />
+          </div>
+        </div>
+
         {/* <LowHeader handleOpen={this.handleOpen} isOpen={this.state.menu} /> */}
       </div>
     );

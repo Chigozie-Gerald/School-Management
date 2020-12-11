@@ -70,7 +70,7 @@ class TopHeader extends PureComponent {
           </div>
           <div
             style={{ visibility: isOpen ? "hidden" : "visible" }}
-            className="lowHeader_wrapper_icon_div"
+            className="lowHeader_wrapper_icon_div smFlex"
           >
             <i
               onClick={handleOpen}
