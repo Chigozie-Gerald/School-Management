@@ -1,5 +1,4 @@
 .location_wrapper {
-  min-height: calc(var(--vvh, 1vh) * 100);
   background-color: #fff;
 }
 .location_title_btn_circle,
@@ -26,7 +25,6 @@
   font-size: 1rem;
 }
 .location_body {
-  min-height: calc(var(--vvh, 1vh) * 100 - 3.5rem);
   background-color: #fff;
 }
 .location_map {
@@ -58,7 +56,6 @@
 .location_title_wraper {
   padding: 1rem;
   padding-top: 2rem;
-  min-height: calc(var(--vvh, 1vh) * 100 - 6.5rem - 15rem);
 }
 .location_title_address,
 .location_title_address_header,
@@ -75,7 +72,6 @@
 }
 .location_title_address {
   font-size: 0.85rem;
-  min-height: 7.5rem;
   margin-bottom: 1.5rem;
   background-color: #fff;
   padding: 0.5rem;

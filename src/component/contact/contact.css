@@ -11,6 +11,7 @@
 .contact_header_inner {
   height: 100%;
 }
+
 .contact_header_inner.div1 {
   width: 2.5rem;
 }
@@ -30,8 +31,10 @@
   font-weight: 450;
 }
 .contact_body {
-  min-height: calc(var(--vvh, 1vh) * 100 - 3.5rem);
+  background-color: #fff;
+  /* min-height: calc(var(--vvh, 1vh) * 100 - 3.5rem); */
 }
+
 .contact_banner {
   min-height: 15rem;
   background: linear-gradient(to right, #06beb6, #48b1bf);
@@ -52,7 +55,6 @@
   font-size: 1.5rem;
 }
 .contact_inner {
-  min-height: calc(var(--vvh, 1vh) * 100 - 18.5rem);
   padding: 1rem;
 }
 .contact_inner_school,

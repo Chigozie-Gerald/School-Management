@@ -21,7 +21,7 @@ class HomeAbout extends PureComponent {
             </div>
           </div>
         </div>
-        <div className="about_body_main clamp hide">
+        <div className="about_body_main hide">
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam,
             aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit.

@@ -69,7 +69,7 @@ class Contact extends PureComponent {
       );
     });
     return (
-      <div className="contact_wrapper div-width-100">
+      <div className="contact_wrapper flex fd_col div-width-100">
         <div
           className={
             this.state.makeShadow
@@ -86,7 +86,7 @@ class Contact extends PureComponent {
             ref={(node) => (this.copyNode = node)}
           ></div>
           <div
-            className="contact_header_inner center div1"
+            className="contact_header_inner center smFlex div1"
             onClick={() => this.props.history.goBack()}
           >
             <i className="material-icons arrow_back arrow_back_icon white"></i>
@@ -104,33 +104,37 @@ class Contact extends PureComponent {
             </div>
           </div>
         </div>
-        <div className="contact_body div-width-100">
-          <div className="contact_banner flex fd_col center div-width-100">
-            <div className="contact_banner_header flex vert_align flex_right div-width-100 pr1">
-              <div className="contact_banner_header flex vert_align flex_right div-width-100 pr1"></div>
-              <div className="contact_banner_badge center hide rad_50">
-                <img
-                  src={require("../social.jpg")}
-                  alt="badge"
-                  className="img_div"
-                />
+        <div className="innerWrapper_flex">
+          <div className="contact_body innerBody div-width-100">
+            <div className="contact_banner flex fd_col center div-width-100">
+              <div className="contact_banner_header flex vert_align flex_right div-width-100 pr1">
+                <div className="contact_banner_header flex vert_align flex_right div-width-100 pr1"></div>
+                <div className="contact_banner_badge center hide rad_50">
+                  <img
+                    src={require("../social.jpg")}
+                    alt="badge"
+                    className="img_div"
+                  />
+                </div>
+              </div>
+              <div className="contact_banner_body center div-width-100">
+                Contact the School, Discuss issues, Do more!
               </div>
             </div>
-            <div className="contact_banner_body center div-width-100">
-              Contact the School, Discuss issues, Do more!
-            </div>
-          </div>
-          <div className="contact_inner div-width-100">
-            <div className="contact_inner_dev_header div-width-100 flex vert_align flex_left">
-              Contact School
-            </div>
-            <div className="contact_pane_wrap box_border">{contactList}</div>
-
-            <div className="contact_inner_dev flex fd_col vert_align div-width-100">
+            <div className="contact_inner div-width-100">
               <div className="contact_inner_dev_header div-width-100 flex vert_align flex_left">
-                Contact Developer
+                Contact School
               </div>
               <div className="contact_pane_wrap box_border">{contactList}</div>
+
+              <div className="contact_inner_dev flex fd_col vert_align div-width-100">
+                <div className="contact_inner_dev_header div-width-100 flex vert_align flex_left">
+                  Contact Developer
+                </div>
+                <div className="contact_pane_wrap box_border">
+                  {contactList}
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -7,7 +7,8 @@
   color: #24292e;
   /* color: #494949; */
   --appHeaderColor: rgb(70, 85, 75);
-  --appHeaderColorLte: rgb(91, 107, 96);
+  --appHeaderColorLte: rgb(80, 95, 85);
+  /* --appHeaderColorLte: rgb(91, 107, 96); */
   --lteColor: rgb(146, 138, 138);
   --lteBacColor: rgba(245, 245, 245);
   /* --lteBacColor: rgba(212, 221, 238, 0.267); */
@@ -15,6 +16,7 @@
   --pantoneLte: #6ba4cf52;
   --darkPantone: rgb(53, 73, 94);
 }
+
 .mdFlex {
   display: none;
 }
@@ -686,9 +688,14 @@
 .about_body_main {
   width: 100%;
   flex: 1;
-  padding: 1rem;
+  padding: 1rem 0;
   border-top: 1px solid #eee;
   text-align: left;
+}
+@media (min-width: 768px) {
+  .about_body_main {
+    padding: 1rem;
+  }
 }
 /* About css ends */
 
@@ -925,10 +932,30 @@
   }
 } */
 @media (min-width: 768px) {
+  .md {
+    height: 100vh;
+  }
   .mdFlex {
     display: flex;
   }
   .smFlex {
     display: none;
+  }
+}
+@media (min-width: 992px) {
+  .innerBody {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    width: 50%;
+    border: 1px solid #eee;
+    border-radius: 0.35rem;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  .innerWrapper_flex {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
   }
 }
