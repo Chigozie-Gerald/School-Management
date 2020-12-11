@@ -1,8 +1,7 @@
 import React, { PureComponent } from "react";
 import "./listOfBooks.css";
-import { Link, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import NotFound from "../../notFound";
-import Select from "../../select/select";
 import SelectPage from "../../select/selectPage";
 // import { connect } from 'react-redux'
 

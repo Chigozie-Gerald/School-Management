@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 // import { connect } from 'react-redux'
 import "./homePage.css";
-import MainHeader from "../mainheader";
+import MainHeader, { MainHeaderMd } from "../mainheader";
 import HomeBanner from "./homeBanner";
 import MainTitle from "../mainTitle";
 import MainSide from "../mainSide";
@@ -46,6 +46,12 @@ class HomePage extends PureComponent {
       <div className="homePage_wrapper" ref={(node) => (this.list = node)}>
         <MainTitle menu={this.props.menu} />
         <MainHeader
+          makeShadow={this.state.makeShadow}
+          handleMenuClose={this.props.handleMenuClose}
+          handleMenuOpen={this.props.handleMenuOpen}
+          menu={this.props.menu}
+        />
+        <MainHeaderMd
           makeShadow={this.state.makeShadow}
           handleMenuClose={this.props.handleMenuClose}
           handleMenuOpen={this.props.handleMenuOpen}

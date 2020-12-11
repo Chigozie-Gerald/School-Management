@@ -1,0 +1,32 @@
+.about_header {
+  min-height: 4rem;
+}
+.about_header_img_wrapper {
+  padding: 1rem;
+  padding-bottom: 0.75rem;
+}
+.about_header_img_div {
+  width: 6.5rem;
+  height: 6.5rem;
+  border: 1px solid #eee;
+}
+.about_header_title {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+.about_header_title_inner {
+  padding: 0 0.5rem;
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 450;
+}
+.about_header_title_inner.div1 {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.about_header_title_inner.div2 {
+  color: #555;
+}
