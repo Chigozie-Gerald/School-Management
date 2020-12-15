@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import "./App.css";
+import os from "os";
 import "./material-design-icons-iconfont-master/material-design-icons-iconfont-master/dist/material-design-icons.css";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 // import MainSide from "./component/mainSide";
@@ -74,11 +75,14 @@ class App extends PureComponent {
     });
   };
   handleResize = () => {
-    let viewheight = window.outerHeight;
-    let viewheight1 = window.innerHeight;
-    let viewwidth = window.outerWidth;
+    const viewheight = window.outerHeight;
+    const viewheight1 = window.innerHeight;
+    const viewwidth = window.outerWidth;
     // let viewwidth = window.innerWidth;
     let viewH;
+    console.log(os);
+    console.log(viewheight, ",d,d,");
+    console.log(viewheight1, "111");
     if (viewheight > viewheight1) {
       viewH = viewheight;
     } else {
@@ -86,10 +90,15 @@ class App extends PureComponent {
     }
     let viewport = document.querySelector("meta[name = viewport]");
     viewport.setAttribute(
-      "content",
-      "height=" + viewheight + ",width=" + viewwidth + ",initial-scale = 1.0"
+      `content`,
+      `height = ${viewheight1}, width = ${viewwidth}, initial-scale = 1.0`
+      // "content",
+      // "height=" + viewheight + ",width=" + viewwidth + ",initial-scale = 1.0"
     );
-    document.documentElement.style.setProperty("--vvh", `${viewH * 0.01}px`);
+    document.documentElement.style.setProperty(
+      "--vvh",
+      `${viewheight1 * 0.01}px`
+    );
     document.documentElement.style.setProperty(
       "--vvw",
       `${viewwidth * 0.01}px`
@@ -107,17 +116,6 @@ class App extends PureComponent {
     return (
       <Router>
         <div className="App flex">
-          {/* <div
-            className={
-              this.menu ? "main_header_side active" : "main_header_side"
-            }
-          >
-            <MainSide handleMenuClose={this.handleMenuClose} />
-            <div
-              className={this.menu ? "main_header_side_float" : "noSHOW"}
-              onClick={this.handleMenuClose}
-            ></div>
-          </div> */}
           <div className="App_wrapper">
             <Switch>
               <Route

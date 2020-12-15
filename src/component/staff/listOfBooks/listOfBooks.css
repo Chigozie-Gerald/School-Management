@@ -1,6 +1,7 @@
 .lob_wrapper {
   padding: 1rem;
   background-color: #fff;
+  background-color: var(--lteBacColor);
 }
 .lob_header {
   padding: 1rem 0;

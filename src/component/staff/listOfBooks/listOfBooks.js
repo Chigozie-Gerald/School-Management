@@ -136,7 +136,7 @@ export class ListOfBooksPane extends PureComponent {
   render() {
     const { subject, list } = this.props;
     return (
-      <div className="box_border hide flex vert_align lobPane div-width-100">
+      <div className="box_border noBorder hide flex vert_align lobPane div-width-100">
         <div className="lobPane_txt flex1">
           {subject && <div className="lobPane_role">{subject}</div>}
           {list.map((el, ind) => (

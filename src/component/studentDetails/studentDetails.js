@@ -5,11 +5,13 @@ import "./studentDetails.css";
 class StudentDetails extends PureComponent {
   render() {
     return (
-      <div className="studentDetails_wrapper tll div-width-100 flex fd_col">
+      <div className="studentDetails_wrapper tll div-width-100 flex fd_col flex1">
         <div className="studentDetails_header flex vert_align div-width-100 flex_left">
-          <div className="studentDetails_header_btn center">Edit Profile</div>
+          <div className="studentDetails_header_btn center div-width-100">
+            Edit Profile
+          </div>
         </div>
-        <div className="studentDetails_title div-width-100  box_border flex">
+        <div className="studentDetails_title div-width-100  box_border noBorder flex">
           <div className="studentDetails_title_inner flex1 flex fd_col pr1">
             <div className="studentDetails_title_name flex flex_right">
               Ijomah Chigozie Gerald
@@ -29,7 +31,7 @@ class StudentDetails extends PureComponent {
             />
           </div>
         </div>
-        <div className="studentDetails_body div-width-100">
+        <div className="studentDetails_body box_border noBorder div-width-100">
           <div className="studentDetails_info div-width-100 flex fd_col">
             <div className="studentDetails_info_header div-width-100 flex vert_align flex_left">
               Address
