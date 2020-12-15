@@ -162,7 +162,7 @@ class StaffProfile extends PureComponent {
     ));
     return (
       <div className="page_wrapper flex">
-        <div className="page_wrapper_left"></div>
+        <div className="page_wrapper_left lgFlex"></div>
         <div className="page_wrapper_middle flex1">
           {location.pathname === `${match.url}` ? (
             <div
@@ -252,19 +252,46 @@ class StaffProfile extends PureComponent {
             <LittleFooter />
           </div>
         </div>
-        <div className="page_wrapper_right">
+        <div className="page_wrapper_right mdFlex">
           <div className="inner hide">
             <MainSideRight
               menu={true}
-              noSHADOW={true}
-              handleOpen={this.handleOpen}
+              md={true}
+              handleOpen={() => {
+                console.log("openig");
+                return;
+              }}
               makeRightShadow={this.state.makeRightShadow}
               makeRightFooterShadow={this.state.makeRightFooterShadow}
               name="Dr. Nwokoye Tochukwu"
               status="Form Teacher: JSS3A"
               isOpen={this.state.menu}
               handlemakeRightShadow={this.handlemakeRightShadow}
-              linkList={linkList}
+              linkList={Link_Arr.reverse().map((elem, n) => (
+                <div
+                  key={`${n}-student-profile-links`}
+                  className={
+                    elem.strict
+                      ? location.pathname === `${elem.link}`
+                        ? "mainSide_right_body_inner active"
+                        : "mainSide_right_body_inner"
+                      : location.pathname.startsWith(`${elem.link}`)
+                      ? "mainSide_right_body_inner active"
+                      : "mainSide_right_body_inner"
+                  }
+                >
+                  <Link
+                    to={{ pathname: elem.link }}
+                    replace
+                    className="Link flex-start"
+                    onClick={() => {
+                      return;
+                    }}
+                  >
+                    {elem.name}
+                  </Link>
+                </div>
+              ))}
               handlemakeRightFooterShadow={this.handlemakeRightFooterShadow}
             />
           </div>

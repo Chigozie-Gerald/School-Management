@@ -250,7 +250,11 @@ export class MainSideRight extends PureComponent {
       handlemakeRightFooterShadow,
     } = this.props;
     return (
-      <div className={`main_header_side_right ${menu ? " active" : ""}`}>
+      <div
+        className={`main_header_side_right ${menu ? "active" : ""} ${
+          md ? "auto" : ""
+        }`}
+      >
         <div
           className={menu ? "main_header_side_float smFlex" : "noSHOW"}
           onClick={handleOpen}
