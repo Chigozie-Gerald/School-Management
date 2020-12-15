@@ -4,9 +4,7 @@ import "./period.css";
 
 export class Period extends PureComponent {
   render() {
-    return (
-      <div className="staff_period_wrapper div-width-100 profile_min_height"></div>
-    );
+    return <div className="staff_period_wrapper div-width-100 flex1"></div>;
   }
 }
 

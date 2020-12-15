@@ -30,13 +30,13 @@ class StudentList extends PureComponent {
           )
       );
     return (
-      <div className="div-width-100 profile_min_height studList_wrap tll">
+      <div className="div-width-100 flex1 studList_wrap tll">
         <div className="studList_wrap_cont"></div>
         <div className="studList_wrap_cont">
           <div className="studList_wrap_header flex vert_align div-width-100">
             Students with uncleared payments
           </div>
-          <div className="studList_wrap_body div-width-100 hide">
+          <div className="studList_wrap_body padWrap div-width-100 hide">
             {student_list_owe}
           </div>
         </div>
@@ -44,7 +44,7 @@ class StudentList extends PureComponent {
           <div className="studList_wrap_header flex vert_align div-width-100">
             SS3A Students
           </div>
-          <div className="studList_wrap_body div-width-100 hide">
+          <div className="studList_wrap_body padWrap div-width-100 hide">
             {student_list}
           </div>
         </div>
@@ -91,17 +91,12 @@ export const StudentListPane = withRouter(
               <div className="studList_box_title div-width-100">
                 {details.name}
               </div>
-              {details.post && (
-                <div className="studList_box_post div-width-100">
-                  {details.post}
-                </div>
-              )}
               {details.debt && (
                 <div className="studList_box_post owe inline_flex">
                   Owes school fees
                 </div>
               )}
-              <div className="studList_box_btn_wrap inline_flex flex_left ">
+              <div className="studList_box_btn_wrap inline_flex flex_left div-width-100">
                 {txt ? txt : "View Profile"}
               </div>
             </div>

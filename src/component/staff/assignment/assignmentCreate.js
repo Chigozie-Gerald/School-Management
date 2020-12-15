@@ -98,13 +98,13 @@ class AssignmentCreate extends PureComponent {
   };
   render() {
     return (
-      <div className="assCreate div-width-100 profile_min_height">
+      <div className="assCreate div-width-100 flex1 flex fd_col">
         <Switch>
           <Route
             exact
             path={this.props.match.url}
             render={() => (
-              <div className="assCreatePane profile_min_height rel flex1 flex fd_col div1 div-width-100">
+              <div className="assCreatePane flex1 rel flex1 flex fd_col div1 div-width-100">
                 <Select />
                 <Select />
                 <div className="assCreate_btn_wrapper flex1 flex horiz_align">

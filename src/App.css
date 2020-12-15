@@ -16,7 +16,9 @@
   --pantoneLte: #6ba4cf52;
   --darkPantone: rgb(53, 73, 94);
 }
-
+.lteBac {
+  background-color: var(--lteBacColor);
+}
 .mdFlex {
   display: none;
 }
@@ -249,6 +251,9 @@
 .div-color-orange {
   color: rgb(226, 112, 19) !important;
   background-color: rgba(253, 126, 20, 0.3) !important;
+}
+.padWrap {
+  padding: 0.5rem;
 }
 .pl1 {
   padding-left: 1rem;
@@ -905,6 +910,9 @@
   }
 }
 @media (min-width: 768px) {
+  .padWrap {
+    padding: 1rem;
+  }
   .md {
     height: 100vh;
   }

@@ -3,9 +3,7 @@ import React, { PureComponent } from "react";
 
 class StaffProfileTable extends PureComponent {
   render() {
-    return (
-      <div className="profileTable_wrapper profile_min_height div-width-100"></div>
-    );
+    return <div className="profileTable_wrapper flex1 div-width-100"></div>;
   }
 }
 

@@ -1,6 +1,9 @@
 .staff_result_wrapper {
   background-color: var(--yellow);
 }
+.result_class_list_body > div {
+  margin-bottom: 1rem;
+}
 .studList_wrap_header.result_list {
   border-radius: 0;
   background-color: rgb(179, 221, 189);
@@ -9,7 +12,7 @@
   background-color: rgb(255, 236, 177);
 }
 .resultUCP_wrapper {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   background-color: #fff;
 }
 .resultUCP_wrapper:last-child {

@@ -39,7 +39,7 @@ class Assignment extends PureComponent {
         <Route
           path={`${match.url}/init`}
           render={() => (
-            <div className="div-width-100 profile_min_height">
+            <div className="div-width-100 flex1">
               <RowBox
                 padding="0.5rem 1rem"
                 title={
@@ -79,7 +79,7 @@ class Assignment extends PureComponent {
           exact
           path={match.url}
           render={() => (
-            <div className="profile_min_height div-width-100 staff_assignment_wrapper flex fd_col">
+            <div className="flex1 div-width-100 staff_assignment_wrapper padWrap flex fd_col">
               <Link to={{ pathname: `${match.url}/create` }} className="Link">
                 <div className="staff_assignment_btn div-width-100 center white_link">
                   Create an Assignment

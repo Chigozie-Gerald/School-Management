@@ -7,7 +7,7 @@ class AssignmentView extends PureComponent {
   render() {
     return (
       <div
-        className="assView_wrapper div-width-100 profile_min_height"
+        className="assView_wrapper div-width-100 flex1"
         style={{
           backgroundColor: colorGenerator(
             "3j",

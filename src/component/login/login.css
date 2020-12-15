@@ -248,16 +248,32 @@
     background-color: var(--lteBacColor);
     border-top-right-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
+    --innerWidth: 85%;
+    --innerMaxWidth: 20rem;
+    --innerShadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  .login_body_left_icon {
+    width: var(--innerWidth);
+    max-width: var(--innerMaxWidth);
+    margin: 0 auto;
+    padding: 1.5rem 0;
+  }
+  .login_body_left_icon i {
+    width: 3rem;
+    height: 3rem;
+    color: var(--pantone);
+    background-color: #fff;
+    display: flex !important;
+    box-shadow: var(--innerShadow);
   }
   .loginBody_wrapper {
     padding: 0;
     padding-bottom: 5rem;
-    /* padding: 0rem 0.5rem; */
     background-color: #fff;
     border-radius: 0.35rem;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
-    max-width: 20rem;
-    width: 85%;
+    box-shadow: var(--innerShadow);
+    width: var(--innerWidth);
+    max-width: var(--innerMaxWidth);
     margin: 0 auto;
   }
 }

@@ -8,9 +8,6 @@
   font-size: 0.9rem;
   border-bottom: 1px solid #ddd;
 }
-.studList_wrap_body {
-  padding: 1rem;
-}
 .studList_box {
   padding: 1rem;
   background-color: #fff;
@@ -23,7 +20,6 @@
 }
 .studList_box:last-child {
   border-bottom: none !important;
-  margin-bottom: 1.5rem;
   border-bottom-left-radius: 0.35rem;
   border-bottom-right-radius: 0.35rem;
 }
@@ -46,19 +42,26 @@
 }
 .studList_box_post {
   font-size: 0.8rem;
-  color: #666;
+  color: teal;
+  color: var(--pantone);
+  /* color: #666; */
 }
 .studList_box_post.owe {
   color: var(--red);
+  color: var(--orange);
   background-color: rgba(255, 0, 0, 0.1);
+  background-color: #fff;
   /* color: rgba(170, 53, 53, 0.774); */
   padding: 0 0.25rem;
+  padding: 0;
+  font-weight: 500;
   border-radius: 0.15rem;
 }
 .studList_box_btn_wrap {
   font-size: 0.85rem;
   padding-top: 0.35rem;
   color: var(--blue);
+  text-decoration: underline;
 }
 .studList_box_btn_wrap:hover {
   text-decoration: underline;

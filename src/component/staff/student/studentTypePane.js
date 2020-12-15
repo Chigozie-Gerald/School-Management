@@ -11,7 +11,7 @@ export class StudentTypePane extends PureComponent {
       !this.props.details ? (
       ""
     ) : (
-      <div className="stnTypePane_wrap div-width-100 tll">
+      <div className="stnTypePane_wrap padWrap div-width-100 tll">
         <div className="stnTypePane_header div-width-100">
           {this.props.form ? "Your Form classes" : "Classes You Take"}
         </div>

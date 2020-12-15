@@ -1,8 +1,3 @@
-.lob_wrapper {
-  padding: 1rem;
-  background-color: #fff;
-  background-color: var(--lteBacColor);
-}
 .lob_header {
   padding: 1rem 0;
   padding-top: 0;
@@ -20,19 +15,13 @@
 .lob_header span {
   font-weight: 500;
 }
-.lobPane_wrapper {
-  margin-bottom: 2rem;
-}
-.lobPane_wrapper:last-child {
-  margin-bottom: 0;
-}
 .lobPane_header {
   font-weight: 500;
   font-size: 1.1rem;
   padding: 0.5rem 0;
 }
 .lobPane {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   background-color: #fff;
 }
 .lobPane_txt {

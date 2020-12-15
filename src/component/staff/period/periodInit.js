@@ -31,7 +31,7 @@ class PeriodInit extends PureComponent {
           exact
           path={`${match.url}`}
           render={() => (
-            <div className="div-width-100 profile_min_height periodInit_wrapper">
+            <div className="div-width-100 flex1 periodInit_wrapper">
               <RowBox
                 padding="0.5rem 1rem"
                 title={

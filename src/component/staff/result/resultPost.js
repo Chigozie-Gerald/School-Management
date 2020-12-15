@@ -8,7 +8,7 @@ class ResultPost extends PureComponent {
   render() {
     // const {match} = this.props
     return (
-      <div className="assCreatePane rel profile_min_height flex1 flex fd_col div1 div-width-100">
+      <div className="assCreatePane rel flex1 flex1 flex fd_col div1 div-width-100">
         <Select />
         <Select />
         <div className="assCreate_btn_wrapper flex1 flex horiz_align">

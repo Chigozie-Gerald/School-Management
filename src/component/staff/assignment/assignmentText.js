@@ -56,7 +56,7 @@ class AssignmentText extends PureComponent {
       </div>
     ));
     return (
-      <div className="assCreatePane profile_min_height div2 flex fd_col">
+      <div className="assCreatePane flex1 div2 flex fd_col">
         {assTAreaList}
         <div className="assCreate_opt flex_left vert_align inline_flex">
           <span

@@ -99,7 +99,7 @@ class StaffList extends PureComponent {
       />
     ));
     return (
-      <div className="staff_list_wrapper div-width-100 profile_min_height">
+      <div className="staff_list_wrapper padWrap rel div-width-100 flex1">
         <div
           id="staff_copy_div_id"
           className={

@@ -23,13 +23,13 @@
   font-weight: 550;
 }
 .stnTypePane_wrap {
-  padding: 0 1rem;
-  padding-bottom: 1rem;
+  /* padding: 0 1rem;
+  padding-bottom: 1rem; */
 }
 .stnTypePane_header {
   padding: 0.5rem 0;
   padding-right: 1rem;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   font-weight: 500;
   font-size: 1rem;
 }
@@ -76,4 +76,10 @@
 }
 .stnTypePane_wrap .Link {
   margin-bottom: 1rem;
+}
+.stnTypePane_wrap .Link:last-child {
+  margin-bottom: 0rem;
+}
+.stnTypePane_wrap:last-child {
+  padding-bottom: 1rem;
 }

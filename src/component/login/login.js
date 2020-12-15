@@ -113,6 +113,12 @@ export class Login extends PureComponent {
         <div className="login_body div-width-100 flex flex1">
           <div className="login_body_right"></div>
           <div className="login_body_left flex1 fd_col center">
+            <div className="div-width-100 login_body_left_icon rad_50 mdFlex">
+              <i
+                onClick={() => history.goBack()}
+                className="material-icons arrow_back center rad_50"
+              ></i>
+            </div>
             <div className="loginBody_wrapper hide div-width-100">
               <div
                 className={`login_header header_sticly mdFlex fd_col ${

@@ -51,12 +51,12 @@ class result extends PureComponent {
             return (
               <div
                 style={{ backgroundColor: "var(--lteBacColor" }}
-                className="profile_min_height div-width-100"
+                className="flex1 div-width-100"
               >
                 <div className="studList_wrap_header result_class_list_head flex vert_align div-width-100">
                   SS3A Students
                 </div>
-                <div className="result_class_list_body p1 div-width-100 flex1">
+                <div className="result_class_list_body padWrap div-width-100 flex1">
                   {student_list_pending.length && (
                     <div className="div-width-100">
                       <div className="studList_wrap_header result_list pending box_border noBorder flex vert_align div-width-100">
@@ -117,7 +117,7 @@ class result extends PureComponent {
                 />
               ));
             return (
-              <div className="profile_min_height div-width-100 p1">
+              <div className="flex1 div-width-100 padWrap lteBac">
                 {resultUpViewList}
               </div>
             );
@@ -148,11 +148,11 @@ class result extends PureComponent {
                 />
               ));
             return (
-              <div className="profile_min_height div-width-100 flex fd_col">
+              <div className="flex1 div-width-100 flex fd_col">
                 <div className="tll studList_wrap_header result_class_list_head flex vert_align div-width-100">
                   Uploaded/Pending Results for this Session
                 </div>
-                <div className="flex1 div-width-100 p1">
+                <div className="flex1 div-width-100 padWrap lteBac">
                   {resultUploadList}
                   <div className="assCreate_btn div1 center inline_flex div-width-100">
                     <Link
@@ -173,7 +173,7 @@ class result extends PureComponent {
           exact
           path={`${match.url}`}
           render={() => (
-            <div className="div-width-100 profile_min_height">
+            <div className="div-width-100 flex1">
               <RowBox
                 padding="0.5rem 1rem"
                 title={
@@ -231,7 +231,7 @@ export const ResultUploadClassPane = withRouter(
       return !details || !details.name || !details.uploads || !details.num ? (
         ""
       ) : (
-        <div className="tll resultUCP_wrapper box_border p1 vert_align flex">
+        <div className="tll resultUCP_wrapper box_border noBorder p1 vert_align flex">
           <div className="resultUCP_detail flex1">
             <div className="resultUCP_detail_name">{details.name} Class</div>
             <div className="resultUCP_detail_ses">

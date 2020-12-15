@@ -14,7 +14,7 @@ class StaffDetailsPane extends PureComponent {
         copyNode={this.props.copyNode}
       />
     ) : (
-      <div className="stPane_wrapper noBorder flex box_border hide fd_col div-width-100 tll">
+      <div className="stPane_wrapper flex box_border noBorder hide fd_col div-width-100 tll">
         <div className="stPane_left flex">
           <div className="stPane_l_left">
             <div

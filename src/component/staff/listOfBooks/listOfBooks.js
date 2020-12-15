@@ -100,9 +100,9 @@ class ListOfBooks extends PureComponent {
         <Route
           path={`${match.url}/list`}
           render={() => (
-            <div className="lob_wrapper profile_min_height div-width-100 tll">
+            <div className="lteBac padWrap flex1 div-width-100 tll">
               <div className="lob_header div-width-100 flex">
-                <span className="flex1">
+                <span className="flex1 flex vert_align">
                   SS2 2017/2018 Session List of Books
                 </span>
                 <div className="center">Contact a book seller</div>

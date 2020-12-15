@@ -80,7 +80,7 @@ class Student extends PureComponent {
           exact
           path={match.url}
           render={() => (
-            <div className="profile_min_height div-width-100 staff_student_wrapper">
+            <div className="flex1 div-width-100 staff_student_wrapper">
               <div className="staff_student_big_btn grid_col_2 div-width-100">
                 <div className="staff_student_big_inner">
                   <div className="staff_student_big_box center">
