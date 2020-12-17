@@ -156,7 +156,7 @@
   background-color: #fff;
   padding: 0.5rem 1rem;
 }
-/* Fess */
+/* Fees */
 .student_profile_history_wrapper {
   padding: 0.5rem 1rem;
   padding-bottom: 0.75rem;
@@ -223,4 +223,33 @@
   -webkit-text-stroke: 0.1rem #eee;
 }
 
-/* Fess end */
+/* Fees end */
+/* Staff and Student end */
+
+.page_wrapper_left,
+.page_wrapper_right {
+  --width: 20rem;
+  width: var(--width);
+  color: #fff;
+  background-color: var(--lteBacColor);
+}
+.page_wrapper_left {
+  background-color: #aaa;
+}
+@media (min-width: 992px) {
+  .page_wrapper_left,
+  .page_wrapper_right {
+    --width: 17.5rem;
+  }
+}
+.page_wrapper_right .inner,
+.page_wrapper_left .inner {
+  width: var(--width);
+  top: 0;
+  right: 0;
+  position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100vh;
+  color: #fff;
+}

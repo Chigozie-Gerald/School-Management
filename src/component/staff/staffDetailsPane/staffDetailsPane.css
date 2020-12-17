@@ -1,7 +1,14 @@
 .stPane_wrapper {
   background-color: #fff;
-  margin: 1rem 0;
+  max-width: 30rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
   padding: 1rem;
+}
+.stPaneExec_wrapper {
+  max-width: 30rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
 }
 .stPane_left {
   padding-bottom: 0.5rem;
@@ -14,6 +21,9 @@
   background-color: #fff;
   height: 1.3rem;
   width: 1.3rem;
+}
+.stPane_right_cont img {
+  cursor: pointer;
 }
 .stPane_l_img {
   height: 3rem;

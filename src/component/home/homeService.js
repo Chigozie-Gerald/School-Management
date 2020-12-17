@@ -45,7 +45,7 @@ class HomeService extends PureComponent {
       );
     });
     return (
-      <div className="homeService_wrapper">
+      <div className="homeService_wrapper homePage_wrapper_col">
         <div className="homeService_header">
           <div className="homeService_header_div div1">Services we offer</div>
           <div className="homeService_header_div div2">

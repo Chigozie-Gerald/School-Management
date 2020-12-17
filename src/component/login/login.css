@@ -116,8 +116,13 @@
   background-color: var(--pantone);
   transition: all 200ms ease;
 }
-.loginBody_btn:disabled,
+.loginBody_btn:disabled {
+  opacity: 0.5;
+}
 .loginBody_btn:hover {
+  opacity: 0.925;
+}
+.loginBody_btn:disabled:hover {
   opacity: 0.5;
 }
 .loginBody_btn:disabled {
@@ -285,8 +290,8 @@
     width: 55%;
     background-color: #eee;
   }
-  .loginBody_wrapper {
-    box-shadow: 0px 0.75rem 3rem rgba(0, 0, 0, 0.05);
-    max-width: 22rem;
+  .login_body_left {
+    --innerShadow: 0px 0.75rem 3rem rgba(0, 0, 0, 0.05);
+    --innerMaxWidth: 22rem;
   }
 }

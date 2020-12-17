@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 class HomeGallery extends PureComponent {
   render() {
     return (
-      <div className="homeGallery_wrapper">
+      <div className="homeGallery_wrapper homePage_wrapper_col">
         <div className="homeGallery_header">
           <div className="homeGallery_header_div div1">School's Gallery</div>
           <div className="homeGallery_header_div div2">

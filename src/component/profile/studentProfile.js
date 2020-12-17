@@ -23,6 +23,7 @@ class StudentProfile extends PureComponent {
     this.handleOpen = this.handleOpen.bind(this);
     this.handleScroll = this.handleScroll.bind(this);
     this.state = {
+      size: window.innerWidth >= 768,
       menu: false,
       makeShadow: false,
       makeRightShadow: false,
@@ -60,14 +61,19 @@ class StudentProfile extends PureComponent {
       makeRightFooterShadow: data ? true : false,
     });
   };
+  handleResize = () => {
+    this.setState({ size: window.innerWidth >= 768 });
+  };
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener("resize", this.handleResize);
   }
   componentWillUnmount() {
     if (this.state.menu) {
       openHandlerDefault();
     }
     window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener("resize", this.handleResize);
   }
   render() {
     const { match, location, history } = this.props;
@@ -157,68 +163,122 @@ class StudentProfile extends PureComponent {
         render={(props) => <elem.render {...props} />}
       />
     ));
-    return (
-      <div className="page_wrapper">
-        {location.pathname === `${match.url}` ? (
-          <div
-            className={`studentProfile_header flex ${
-              this.state.makeShadow ? "" : "noSHADOW"
-            }`}
-          >
-            <div
-              className="studentProfile_header_inner div1 center"
-              onClick={() => history.goBack()}
-            >
-              <i className="material-icons arrow_back studentProfile_header_icon"></i>
-            </div>
-            <div className="studentProfile_header_inner div2 vert_align flex flex1 tll">
-              <span className="div-width-100 ellipsis">Student Profile</span>
-            </div>
-            <div
-              style={{ visibility: this.state.menu ? "hidden" : "visible" }}
-              className="lowHeader_wrapper_icon_div smFlex profile box_border center"
-            >
-              <i
-                onClick={this.handleOpen}
-                className="material-icons menu lowHeader_wrapper_icon"
-              ></i>
-            </div>
-          </div>
-        ) : (
-          <TopHeader
-            image="./social.jpg"
-            title="Ijomah Chigozie G."
-            subTitle="SS3A"
-            handleOpen={this.handleOpen}
-            makeShadow={this.state.makeShadow}
-          />
-        )}
-        <MainSideRight
-          menu={this.state.menu}
-          handleOpen={this.handleOpen}
-          makeRightShadow={this.state.makeRightShadow}
-          makeRightFooterShadow={this.state.makeRightFooterShadow}
-          name="Ijomah Chigozie Gerald"
-          status="JSS3H"
-          handlemakeRightShadow={this.handlemakeRightShadow}
-          linkList={linkList}
-          handlemakeRightFooterShadow={this.handlemakeRightFooterShadow}
-        />
 
-        <div className="studentProfile_body flex fd_col">
-          <Switch>
-            {LinkRoutes}
-            <Route
-              exact
-              render={(props) => (
-                <NotFound
-                  {...props}
-                  height="calc(var(--vvh, 1vh) * 100 - 6.5rem)"
-                />
-              )}
+    return (
+      <div className="page_wrapper flex">
+        <div className="page_wrapper_left lgFlex"></div>
+        <div className="page_wrapper_middle flex1">
+          {location.pathname === `${match.url}` ? (
+            <div
+              className={`studentProfile_header flex ${
+                this.state.makeShadow ? "" : "noSHADOW"
+              }`}
+            >
+              <div
+                className="studentProfile_header_inner div1 center"
+                onClick={() => history.goBack()}
+              >
+                <i className="material-icons arrow_back studentProfile_header_icon"></i>
+              </div>
+              <div className="studentProfile_header_inner div2 vert_align flex flex1 tll">
+                <span className="div-width-100 ellipsis">Student Profile</span>
+              </div>
+              <div
+                style={{ visibility: this.state.menu ? "hidden" : "visible" }}
+                className="lowHeader_wrapper_icon_div smFlex profile box_border center"
+              >
+                <i
+                  onClick={this.handleOpen}
+                  className="material-icons menu lowHeader_wrapper_icon"
+                ></i>
+              </div>
+            </div>
+          ) : (
+            <TopHeader
+              image="./social.jpg"
+              title="Ijomah Chigozie G."
+              subTitle="SS3A"
+              handleOpen={this.handleOpen}
+              makeShadow={this.state.makeShadow}
             />
-          </Switch>
-          <LittleFooter />
+          )}
+          {this.state.size ? (
+            ""
+          ) : (
+            <MainSideRight
+              menu={this.state.menu}
+              handleOpen={this.handleOpen}
+              makeRightShadow={this.state.makeRightShadow}
+              makeRightFooterShadow={this.state.makeRightFooterShadow}
+              name="Ijomah Chigozie Gerald"
+              status="JSS3H"
+              handlemakeRightShadow={this.handlemakeRightShadow}
+              linkList={linkList}
+              handlemakeRightFooterShadow={this.handlemakeRightFooterShadow}
+            />
+          )}
+
+          <div className="studentProfile_body flex fd_col">
+            <Switch>
+              {LinkRoutes}
+              <Route
+                exact
+                render={(props) => (
+                  <NotFound
+                    {...props}
+                    height="calc(var(--vvh, 1vh) * 100 - 6.5rem)"
+                  />
+                )}
+              />
+            </Switch>
+            <LittleFooter />
+          </div>
+        </div>
+        <div className="page_wrapper_right mdFlex">
+          <div className="inner hide">
+            <MainSideRight
+              menu={true}
+              md={true}
+              handleOpen={() => {
+                console.log("openig");
+                return;
+              }}
+              makeRightShadow={this.state.makeRightShadow}
+              makeRightFooterShadow={this.state.makeRightFooterShadow}
+              name="Ijomah Chigozie G."
+              status="SS3A"
+              isOpen={this.state.menu}
+              handlemakeRightShadow={this.handlemakeRightShadow}
+              linkList={Link_Arr.reverse()
+                .filter((el) => el.return !== false)
+                .map((elem, n) => (
+                  <div
+                    key={`${n}-student-profile-links`}
+                    className={
+                      elem.strict
+                        ? location.pathname === `${elem.link}`
+                          ? "mainSide_right_body_inner active"
+                          : "mainSide_right_body_inner"
+                        : location.pathname.startsWith(`${elem.link}`)
+                        ? "mainSide_right_body_inner active"
+                        : "mainSide_right_body_inner"
+                    }
+                  >
+                    <Link
+                      to={{ pathname: elem.link }}
+                      replace
+                      className="Link flex-start"
+                      onClick={() => {
+                        return;
+                      }}
+                    >
+                      {elem.name}
+                    </Link>
+                  </div>
+                ))}
+              handlemakeRightFooterShadow={this.handlemakeRightFooterShadow}
+            />
+          </div>
         </div>
       </div>
     );

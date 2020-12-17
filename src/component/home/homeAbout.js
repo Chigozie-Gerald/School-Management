@@ -5,7 +5,7 @@ import "./homeAbout.css";
 class HomeAbout extends PureComponent {
   render() {
     return (
-      <div className="tll about_wrapper">
+      <div className="tll about_wrapper homePage_wrapper_col">
         <div className="about_top_header div-width-100">About School</div>
         <div className="homeAbout_header div-width-100 flex">
           <div className="homeAbout_header_img_div rad_50 center hide">

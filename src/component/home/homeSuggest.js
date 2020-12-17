@@ -34,7 +34,7 @@ class HomeSuggest extends PureComponent {
 
   render() {
     return (
-      <div className="homeSuggest_wrapper">
+      <div className="homeSuggest_wrapper homePage_wrapper_col">
         <div className="homeSuggest_top_header">
           <div className="homeSuggest_top_header_title">Suggestions</div>
           <div className="homeSuggest_top_header_body">

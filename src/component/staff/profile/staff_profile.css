@@ -36,30 +36,3 @@
 .lowHeader_wrapper_icon_div.search {
   padding: 0.5rem 1.5rem;
 }
-.page_wrapper_left,
-.page_wrapper_right {
-  --width: 20rem;
-  width: var(--width);
-  color: #fff;
-  background-color: var(--lteBacColor);
-}
-.page_wrapper_left {
-  background-color: #aaa;
-}
-@media (min-width: 1024px) {
-  .page_wrapper_left,
-  .page_wrapper_right {
-    --width: 22.5rem;
-  }
-}
-.page_wrapper_right .inner,
-.page_wrapper_left .inner {
-  width: var(--width);
-  top: 0;
-  right: 0;
-  position: fixed;
-  overflow-y: auto;
-  overflow-x: hidden;
-  height: 100vh;
-  color: #fff;
-}

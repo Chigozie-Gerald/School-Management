@@ -43,7 +43,10 @@ class HomePage extends PureComponent {
   }
   render() {
     return (
-      <div className="homePage_wrapper" ref={(node) => (this.list = node)}>
+      <div
+        className="homePage_wrapper div-width-100"
+        ref={(node) => (this.list = node)}
+      >
         <MainTitle menu={this.props.menu} />
         <MainHeader
           makeShadow={this.state.makeShadow}
@@ -69,15 +72,33 @@ class HomePage extends PureComponent {
           ></div>
         </div>
         <HomeBanner />
-        <HomeReg />
-        <HomeAbout />
-        <HomeSlider />
-        <HomeProp />
-        <HomeGallery />
-        <HomeSuggest />
-        <HomeService />
-        <HomeNews />
-        <HomeMap />
+        <div className="homePage_inner smFlex">
+          <HomeReg />
+          <HomeAbout />
+          <HomeSlider />
+          <HomeProp />
+          <HomeGallery />
+          <HomeSuggest />
+          <HomeService />
+          <HomeNews />
+          <HomeMap />
+        </div>
+        <div className="homePage_inner mdFlex">
+          <div className="homePage_left flex1">
+            <HomeReg />
+            <HomeAbout />
+            <HomeSlider />
+            <HomeProp />
+            <HomeGallery />
+            <HomeSuggest />
+            <HomeService />
+            <div className="flex">
+              <HomeMap />
+              <HomeNews />
+            </div>
+          </div>
+          <div className="homePage_right lgFlex"></div>
+        </div>
         <HomeFooter />
       </div>
     );

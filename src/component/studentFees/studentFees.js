@@ -26,7 +26,7 @@ class StudentFees extends PureComponent {
     const student_fees_list = student_fees_arr.map((elem, n) => {
       return (
         <div
-          className="studentFees_body_wrapper_inner box_border p1 flex div-width-100"
+          className="studentFees_body_wrapper_inner box_border noBorder p1 flex div-width-100"
           key={n}
         >
           <div className="div-width-100 studentFees_body_pane_box flex1">
@@ -69,7 +69,7 @@ class StudentFees extends PureComponent {
           exact
           path={`${match.url}`}
           render={() => (
-            <div className="tll studentFees_wrapper flex1 div-width-100 flex fd_col pr1 pl1">
+            <div className="tll studentFees_wrapper lteBac padWrap flex1 div-width-100 flex fd_col pr1 pl1">
               <div className="studentFees_hist">
                 <div className="studentProfile_btn header btn_link div-width-100">
                   <Link
@@ -81,7 +81,7 @@ class StudentFees extends PureComponent {
                 </div>
               </div>
               <div className="flex1 pt0">
-                <div className="studentFees_comp div-width-100 box_border p1 flex">
+                <div className="studentFees_comp div-width-100 box_border noBorder p1 flex">
                   <Link
                     className="Link"
                     to={{ pathname: `${match.url}/compulsory` }}

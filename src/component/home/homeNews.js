@@ -19,23 +19,26 @@ class HomeNews extends PureComponent {
                 />
               </div>
             </div>
-            <div className="homeNews_body_inner div2">
-              <div className="homeNews_body_inner_div2_header">
-                School settles resumption date for 12th August, 2020...
+            <div className="homeNews_body_inner div2 flex1 flex">
+              <div className="flex1">
+                <div className="homeNews_body_inner_div2_header div-width-100 clamp3">
+                  School settles resumption date for 12th August, 2020
+                </div>
+                <div className="homeNews_body_inner_div2_body div-width-100 clamp2">
+                  The school board after a meeting on the 22nd of june
+                </div>
               </div>
-              <div className="homeNews_body_inner_div2_body">
-                The school board after a meeting on the 22nd of june...
+
+              <div className="homeNews_body_inner div3">
+                <i className="material-icons keyboard_arrow_right home_news_body_icon"></i>
               </div>
-            </div>
-            <div className="homeNews_body_inner div3">
-              <i className="material-icons keyboard_arrow_right home_news_body_icon"></i>
             </div>
           </Link>
         </div>
       ) : null;
     });
     return (
-      <div className="homeNews_wrapper">
+      <div className="homeNews_wrapper box_border">
         <div className="homeNews_header">
           <div className="homeNews_header_inner div1">News</div>
           <div className="homeNews_header_inner div2">

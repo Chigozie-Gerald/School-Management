@@ -19,6 +19,13 @@
 .lteBac {
   background-color: var(--lteBacColor);
 }
+.appbtn {
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+.appbtn:hover {
+  opacity: 0.925;
+}
 .mdFlex {
   display: none;
 }
@@ -352,7 +359,7 @@
   justify-content: flex-end;
 }
 .noShow {
-  display: none;
+  display: none !important;
 }
 .height_auto {
   height: auto;
@@ -385,7 +392,7 @@
   align-items: center;
 }
 .noSHOW {
-  display: none;
+  display: none !important;
 }
 .transparent {
   opacity: 0;
@@ -508,12 +515,15 @@
 .mainSide_right_body_inner .Link {
   padding: 1rem;
   padding-left: 2rem;
+
+  padding: 0.75rem;
+  padding-left: 1.5rem;
 }
 .mainSide_right_body_inner.active {
   background-color: rgb(53, 73, 94, 0.1);
 }
 .mainSide_right_body_inner:hover {
-  background-color: rgb(53, 73, 94, 0.1);
+  background-color: var(--lteBacColor);
 }
 .mainSide_right_header_img_div {
   width: 2.25rem;
@@ -522,6 +532,7 @@
 .mainSide_right_header_title_div {
   flex: 1;
   padding-left: 1rem;
+  font-size: 0.9rem;
 }
 .mainSide_right_header_title_div .div2 {
   font-size: 0.75rem;
@@ -618,6 +629,9 @@
   color: #999;
   font-size: 1.35rem !important;
 }
+.homePage_wrapper_col {
+  margin-bottom: 1rem;
+}
 .no_side_padding {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -678,7 +692,6 @@
 .about_wrapper {
   width: 100%;
   background-color: #fff;
-  /* min-height: 25rem; */
   display: flex;
   flex-direction: column;
   padding: 1.5rem 1rem 0 1rem;
@@ -922,10 +935,15 @@
   .smFlex {
     display: none !important;
   }
+  .about_wrapper {
+    border-radius: 0.5rem;
+  }
+  .homePage_wrapper_col {
+    margin-bottom: 3rem;
+  }
   .mainSide_right_header {
     height: 3.5rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 1rem;
   }
   .mainSide_right_header_title_div > div {
     overflow: hidden;
@@ -937,6 +955,9 @@
   }
   .mainSide_right_header_title_div .div2 {
     height: 1rem;
+  }
+  .mainSide_right_body_inner {
+    font-size: 0.8rem;
   }
   .mainSide_wrapper {
     border-left: 1px solid #eee;

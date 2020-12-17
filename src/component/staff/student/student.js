@@ -81,9 +81,9 @@ class Student extends PureComponent {
           path={match.url}
           render={() => (
             <div className="flex1 div-width-100 staff_student_wrapper">
-              <div className="staff_student_big_btn grid_col_2 div-width-100">
+              <div className="staff_student_big_btn padWrap grid_col_2 div-width-100">
                 <div className="staff_student_big_inner">
-                  <div className="staff_student_big_box center">
+                  <div className="staff_student_big_box center appbtn">
                     <Link
                       className="Link"
                       to={{ pathname: `${link(match.url)}/results` }}
@@ -94,7 +94,7 @@ class Student extends PureComponent {
                   <div className="staff_student_big_txt"></div>
                 </div>
                 <div className="staff_student_big_inner">
-                  <div className="staff_student_big_box center">
+                  <div className="staff_student_big_box center appbtn">
                     <Link
                       className="Link"
                       to={{ pathname: `${link(match.url)}/assignment/init` }}

@@ -4,8 +4,9 @@
   background-color: var(--lteBacColor);
 }
 .staff_student_big_btn {
-  padding: 1rem;
   gap: 1rem;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
   grid-auto-rows: minmax(auto, auto);
   background-color: #fff;
   position: relative;

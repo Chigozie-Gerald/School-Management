@@ -5,9 +5,9 @@ import "./studentDetails.css";
 class StudentDetails extends PureComponent {
   render() {
     return (
-      <div className="studentDetails_wrapper tll div-width-100 flex fd_col flex1">
+      <div className="studentDetails_wrapper padWrap tll div-width-100 flex fd_col flex1">
         <div className="studentDetails_header flex vert_align div-width-100 flex_left">
-          <div className="studentDetails_header_btn center div-width-100">
+          <div className="studentDetails_header_btn center appbtn">
             Edit Profile
           </div>
         </div>

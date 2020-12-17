@@ -38,12 +38,6 @@ class StaffDetailsPane extends PureComponent {
             </div>
           </div>
         </div>
-        {/* <StPaneFooter
-          admin={false}
-          elem={elem.contact}
-          copyFunc={this.props.copyFunc}
-          copyNode={this.props.copyNode}
-        /> */}
       </div>
     );
   }
@@ -64,7 +58,7 @@ export class ExecStaffDetails extends PureComponent {
     const { elem } = this.props;
     return (
       <div
-        className="box_border hide tll div-width-100 noBorder"
+        className="box_border hide tll div-width-100 stPaneExec_wrapper noBorder"
         style={{ backgroundColor: "#fff" }}
       >
         <div className="EStaffDet_img div-width-100">

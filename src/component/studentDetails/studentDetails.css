@@ -1,7 +1,6 @@
 .studentDetails_wrapper {
   min-height: calc(var(--vvh, 1vh) * 100 - 9.5rem);
   background-color: var(--lteBacColor);
-  padding: 0.5rem;
 }
 
 .studentDetails_header {
@@ -12,12 +11,10 @@
   min-height: 2rem;
   border-radius: 0.35rem;
   color: #fff;
+  width: 50%;
   background-color: var(--secondary);
-  transition: all 200ms ease;
 }
-.studentDetails_header_btn:hover {
-  opacity: 0.75;
-}
+
 .studentDetails_title {
   background-color: #fff;
   padding: 1rem;
@@ -96,9 +93,6 @@
   width: 100%;
 }
 @media (min-width: 768px) {
-  .studentDetails_wrapper {
-    padding: 1rem;
-  }
   .studentDetails_body {
     margin-top: 1rem;
   }

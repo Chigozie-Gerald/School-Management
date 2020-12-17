@@ -1,3 +1,10 @@
 .staff_list_wrapper {
   background-color: var(--lteBacColor);
 }
+@media (min-width: 1992px) {
+  .staff_list_wrapper_ord {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 1rem;
+  }
+}

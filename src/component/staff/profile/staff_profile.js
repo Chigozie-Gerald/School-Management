@@ -24,6 +24,7 @@ class StaffProfile extends PureComponent {
     super(props);
     this.handleStateChange = this.handleStateChange.bind(this);
     this.state = {
+      size: window.innerWidth >= 768,
       menu: false,
       makeShadow: false,
       makeRightShadow: false,
@@ -71,14 +72,19 @@ class StaffProfile extends PureComponent {
       });
     }
   };
+  handleResize = () => {
+    this.setState({ size: window.innerWidth >= 768 });
+  };
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener("resize", this.handleResize);
   }
   componentWillUnmount() {
     if (this.state.menu) {
       openHandlerDefault();
     }
     window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener("resize", this.handleResize);
   }
 
   render() {
@@ -152,14 +158,16 @@ class StaffProfile extends PureComponent {
       </div>
     ));
 
-    const LinkRoutes = Link_Arr.reverse().map((elem, n) => (
-      <Route
-        key={"staff_profile_route" + n}
-        exact={elem.strict ? true : false}
-        path={elem.link}
-        render={(props) => <elem.render {...props} />}
-      />
-    ));
+    const LinkRoutes = Link_Arr.reverse()
+      .filter((el) => el.return !== false)
+      .map((elem, n) => (
+        <Route
+          key={"staff_profile_route" + n}
+          exact={elem.strict ? true : false}
+          path={elem.link}
+          render={(props) => <elem.render {...props} />}
+        />
+      ));
     return (
       <div className="page_wrapper flex">
         <div className="page_wrapper_left lgFlex"></div>
@@ -224,18 +232,21 @@ class StaffProfile extends PureComponent {
               handleOpen={this.handleOpen}
             />
           )}
-          <MainSideRight
-            menu={this.state.menu}
-            handleOpen={this.handleOpen}
-            makeRightShadow={this.state.makeRightShadow}
-            makeRightFooterShadow={this.state.makeRightFooterShadow}
-            name="Dr. Nwokoye Tochukwu"
-            status="Form Teacher: JSS3A"
-            isOpen={this.state.menu}
-            handlemakeRightShadow={this.handlemakeRightShadow}
-            linkList={linkList}
-            handlemakeRightFooterShadow={this.handlemakeRightFooterShadow}
-          />
+          {this.state.size ? (
+            ""
+          ) : (
+            <MainSideRight
+              menu={this.state.menu}
+              handleOpen={this.handleOpen}
+              makeRightShadow={this.state.makeRightShadow}
+              makeRightFooterShadow={this.state.makeRightFooterShadow}
+              name="Ijomah Chigozie Gerald"
+              status="JSS3H"
+              handlemakeRightShadow={this.handlemakeRightShadow}
+              linkList={linkList}
+              handlemakeRightFooterShadow={this.handlemakeRightFooterShadow}
+            />
+          )}
           <div className="studentProfile_body flex fd_col">
             <Switch>
               {LinkRoutes}

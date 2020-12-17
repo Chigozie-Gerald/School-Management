@@ -42,7 +42,7 @@
 }
 .main_header_flex {
   padding: 0.5rem;
-  padding-left: 0;
+  padding-left: 1rem;
   color: #fff !important;
 }
 .main_header_flex_inner {

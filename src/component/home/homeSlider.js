@@ -27,7 +27,7 @@ class HomeSlider extends PureComponent {
       );
     });
     return (
-      <div className="homeSlider_wrapper">
+      <div className="homeSlider_wrapper homePage_wrapper_col">
         <div className="homeSlider_box">
           <div
             className="homeSlider_div swipe_wrapper slider_wrapper"

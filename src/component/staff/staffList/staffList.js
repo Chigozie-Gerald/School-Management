@@ -1,6 +1,8 @@
 import React, { PureComponent } from "react";
 import "./staffList.css";
-import StaffDetailsPane from "../staffDetailsPane/staffDetailsPane";
+import StaffDetailsPane, {
+  ExecStaffDetails,
+} from "../staffDetailsPane/staffDetailsPane";
 // import { connect } from 'react-redux'
 
 class StaffList extends PureComponent {
@@ -87,9 +89,11 @@ class StaffList extends PureComponent {
         ],
       },
     ];
-    const new_staff_arr = staff_arr.sort((a, b) =>
-      a.exec ? -1 : b.exec ? 1 : 0
-    );
+    // const new_staff_arr = staff_arr.sort((a, b) =>
+    //   a.exec ? -1 : b.exec ? 1 : 0
+    // );
+    const new_staff_arr = staff_arr.filter((a) => !a.exec);
+    const execArr = staff_arr.filter((elem) => elem.exec);
     const staff_list = new_staff_arr.map((elem, n) => (
       <StaffDetailsPane
         key={`staff_list_${n}`}
@@ -109,7 +113,16 @@ class StaffList extends PureComponent {
           }
           ref={(node) => (this.copyNode = node)}
         ></div>
-        {staff_list}
+
+        {execArr.map((elem, n) => (
+          <ExecStaffDetails
+            key={`staffListExec personal_${n}`}
+            elem={elem}
+            copyFunc={this.copyStateHandler}
+            copyNode="staff_copy_div_id"
+          />
+        ))}
+        <div className="staff_list_wrapper_ord">{staff_list}</div>
       </div>
     );
   }

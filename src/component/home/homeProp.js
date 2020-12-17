@@ -5,7 +5,7 @@ import "./homeProp.css";
 class HomeProp extends PureComponent {
   render() {
     return (
-      <div className="tll about_wrapper">
+      <div className="tll about_wrapper homePage_wrapper_col">
         <div className="about_top_header">Meet the Proprietor</div>
         <div className="about_header div-width-100">
           <div className=" center about_header_img_wrapper div-width-100">

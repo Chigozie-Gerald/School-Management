@@ -1,6 +1,5 @@
 import React, { PureComponent } from "react";
 import "./App.css";
-import os from "os";
 import "./material-design-icons-iconfont-master/material-design-icons-iconfont-master/dist/material-design-icons.css";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 // import MainSide from "./component/mainSide";
@@ -80,9 +79,6 @@ class App extends PureComponent {
     const viewwidth = window.outerWidth;
     // let viewwidth = window.innerWidth;
     let viewH;
-    console.log(os);
-    console.log(viewheight, ",d,d,");
-    console.log(viewheight1, "111");
     if (viewheight > viewheight1) {
       viewH = viewheight;
     } else {
