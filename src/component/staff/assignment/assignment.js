@@ -81,7 +81,7 @@ class Assignment extends PureComponent {
           render={() => (
             <div className="flex1 div-width-100 staff_assignment_wrapper padWrap flex fd_col">
               <Link to={{ pathname: `${match.url}/create` }} className="Link">
-                <div className="staff_assignment_btn div-width-100 center white_link">
+                <div className="staff_assignment_btn div-width-100 center">
                   Create an Assignment
                 </div>
               </Link>

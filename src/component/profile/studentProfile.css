@@ -235,11 +235,15 @@
 }
 .page_wrapper_left {
   background-color: #aaa;
+  background-color: var(--lteBacColor);
 }
 @media (min-width: 992px) {
   .page_wrapper_left,
   .page_wrapper_right {
     --width: 17.5rem;
+  }
+  .page_wrapper_left {
+    --width: 20rem;
   }
 }
 .page_wrapper_right .inner,

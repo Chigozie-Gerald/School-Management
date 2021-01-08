@@ -82,7 +82,27 @@
 .select_float_body {
   overflow-y: auto;
   overflow-x: hidden;
-  max-height: 16rem;
+  max-height: 15rem;
+}
+.select_float_body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.select_float_body::-webkit-scrollbar-track {
+  background-color: #eee;
+  /* border-radius: 1rem; */
+  overflow: hidden;
+  padding: 0 0.25rem;
+}
+.select_float_body::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+}
+.select_float_body::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(159, 159, 159);
+}
+@media (min-width: 568px) {
+  .select_float_body::-webkit-scrollbar {
+    width: 0.85rem;
+  }
 }
 .select_float_inner {
   width: 100%;
